@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\Christmas_Lights_System.X.production.sym \
   --cmf=dist/default/production\Christmas_Lights_System.X.production.cmf -z \
-  -Q18F24Q10 -oC:\Users\CRISTI~1\AppData\Local\Temp\xcAsb0k.4 \
+  -Q18F24Q10 -oC:\Users\CRISTI~1\AppData\Local\Temp\xcAs7mg.4 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Christmas_Lights_System.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=060h-04FFh -pstack=STACK \
@@ -23,7 +23,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\CRISTI~1\AppData\Local\Temp\xcAsb0k.o \
+  C:\Users\CRISTI~1\AppData\Local\Temp\xcAs7mg.o \
   dist/default/production\Christmas_Lights_System.X.production.o 
 
 Object code version is 3.11
@@ -33,7 +33,7 @@ Machine type is 18F24Q10
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\CRISTI~1\AppData\Local\Temp\xcAsb0k.o
+C:\Users\CRISTI~1\AppData\Local\Temp\xcAs7mg.o
                 idloc                            200000   200000      100        0       5
                 config                           300000   300000        C        0       4
                 init                                  0        0        4        0       0
