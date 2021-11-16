@@ -1,5 +1,5 @@
-#ifndef MAIN_H_
-#define MAIN_H_
+#ifndef DIO_H_
+#define DIO_H_
 
 /**
  * \file       main.h
@@ -12,6 +12,7 @@
 /*                                  Includes                                  */
 /*----------------------------------------------------------------------------*/
 #include <xc.h>
+#include <stdlib.h>
 #include "../TYPES/types.h"
 
 /*----------------------------------------------------------------------------*/
@@ -59,7 +60,7 @@ void Dio_vSetPinDirection(uint8_t port_pin, Dio_tPinDirectionType direction);
  * \param     level - represents the pin level
  * \return    None 
  */
-void Dio_vSetPinLevel(uint8_t pin, Dio_tPinLogicLevel level);
+void Dio_vSetPinLevel(uint8_t port_pin, Dio_tPinLogicLevel level);
 
 /**
  * \brief     This function gets the level of the pin
@@ -68,4 +69,4 @@ void Dio_vSetPinLevel(uint8_t pin, Dio_tPinLogicLevel level);
  */
 Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t pin);
 
-#endif /* MAIN_H_ */
+#endif /* DIO_H_ */

@@ -8,6 +8,7 @@
 /*                                 Includes                                   */
 /*----------------------------------------------------------------------------*/
 
+#include "mcc_generated_files/mcc.h"
 #include "main.h"
 #include "DIO/dio.h"
 
@@ -48,6 +49,16 @@
 /*----------------------------------------------------------------------------*/
 void main(void) 
 {
+	SYSTEM_Initialize();
+    Dio_vSetPinDirection(0xC4, DIO_OUTPUT_PIN);
+    while(1) 
+    {
+        __delay_ms(100);
+        Dio_vSetPinLevel(0xC4, STD_LOW);
+        __delay_ms(100);
+        Dio_vSetPinLevel(0xC4, STD_HIGH);
+    }
+
 }
 
 /*----------------------------------------------------------------------------*/

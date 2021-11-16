@@ -8,7 +8,7 @@
 /*                                 Includes                                   */
 /*----------------------------------------------------------------------------*/
 
-#include "../DIO/dio.h"
+#include "dio.h"
 
 /*----------------------------------------------------------------------------*/
 /*                               Local defines                                */
@@ -61,20 +61,46 @@ void Dio_vSetPinDirection(uint8_t port_pin, Dio_tPinDirectionType direction)
     
     switch(port)
     {
-        case 0x0A: 
+        case 0xA: 
         {
+            if(direction == DIO_OUTPUT_PIN) 
+            {
+                /*Clear pin position from TRISA for setting the pin to output*/
+                MASK_REGISTER_CLEAR_BIT(TRISA, pin);
+            }
+            else 
+            {
+                /*Clear pin position from TRISA for setting the pin to output*/
+                MASK_REGISTER_SET_BIT(TRISA, pin);
+            }      
             break;
         }
-        case 0x0B:
+        case 0xB:
         {
+            if(direction == DIO_OUTPUT_PIN) 
+            {
+                /*Clear pin position from TRISB for setting the pin to output*/
+                MASK_REGISTER_CLEAR_BIT(TRISB, pin);
+            }
+            else 
+            {
+                /*Clear pin position from TRISB for setting the pin to output*/
+                MASK_REGISTER_SET_BIT(TRISB, pin);
+            }
             break;            
         }
-        case 0x0C:
+        case 0xC:
         {
-            break;
-        }
-        case 0x0E:
-        {
+            if(direction == DIO_OUTPUT_PIN) 
+            {
+                /*Clear pin position from TRISC for setting the pin to output*/
+                MASK_REGISTER_CLEAR_BIT(TRISC, pin);
+            }
+            else 
+            {
+                /*Clear pin position from TRISC for setting the pin to output*/
+                MASK_REGISTER_SET_BIT(TRISC, pin);
+            }
             break;
         }
         default: 
@@ -93,9 +119,64 @@ void Dio_vSetPinDirection(uint8_t port_pin, Dio_tPinDirectionType direction)
  * \param     level - represents the pin level
  * \return    None 
  */
-void Dio_vSetPinLevel(uint8_t pin, Dio_tPinLogicLevel level) 
+void Dio_vSetPinLevel(uint8_t port_pin, Dio_tPinLogicLevel level) 
 {
+    uint8_t port;
+    uint8_t pin;
     
+    port = MASK_8BIT_MSB(port_pin);
+    pin = MASK_8BIT_LSB(port_pin);
+    
+       switch(port)
+    {
+        case 0xA: 
+        {
+            if(level == STD_LOW) 
+            {
+                /*Clear pin position from TRISA for setting the pin to output*/
+                MASK_REGISTER_CLEAR_BIT(LATA, pin);
+            }
+            else 
+            {
+                /*Clear pin position from TRISA for setting the pin to output*/
+                MASK_REGISTER_SET_BIT(LATA, pin);
+            }      
+            break;
+        }
+        case 0xB:
+        {
+            if(level == STD_LOW) 
+            {
+                /*Clear pin position from TRISB for setting the pin to output*/
+                MASK_REGISTER_CLEAR_BIT(LATB, pin);
+            }
+            else 
+            {
+                /*Clear pin position from TRISB for setting the pin to output*/
+                MASK_REGISTER_SET_BIT(LATB, pin);
+            }
+            break;            
+        }
+        case 0xC:
+        {
+            if(level == STD_LOW) 
+            {
+                /*Setting a bit in LATx will drive the pin low*/
+                MASK_REGISTER_CLEAR_BIT(LATC, pin);
+            }
+            else 
+            {
+                /*Setting a bit in LATx will drive the pin high*/
+                MASK_REGISTER_SET_BIT(LATC, pin);
+            }
+            break;
+        }
+        default: 
+        {
+            /* Do nothing */
+            break;
+        }
+    }
 }
 
 /**
