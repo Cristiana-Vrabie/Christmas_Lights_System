@@ -15761,7 +15761,7 @@ void Dio_vSetPinLevel(uint8_t port_pin, Dio_tPinLogicLevel level);
 
 
 
-Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t pin);
+Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t port_pin);
 # 11 "DIO/dio.c" 2
 # 54 "DIO/dio.c"
 void Dio_vSetPinDirection(uint8_t port_pin, Dio_tPinDirectionType direction)
@@ -15897,7 +15897,64 @@ void Dio_vSetPinLevel(uint8_t port_pin, Dio_tPinLogicLevel level)
 
 
 
-Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t pin)
+Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t port_pin)
 {
+    uint8_t port;
+    uint8_t pin;
+    Dio_tPinLogicLevel returned_value = STD_LOW;
 
+    port = ((port_pin & (0xF0u)) >> 4u);
+    pin = (port_pin & (0x0Fu));
+
+    switch(port)
+    {
+        case 0xA:
+        {
+            if(STD_LOW == ((PORTA>>pin)&0x01u))
+            {
+
+                returned_value = STD_LOW;
+            }
+            else
+            {
+
+                returned_value = STD_HIGH;
+            }
+            break;
+        }
+        case 0xB:
+        {
+            if(STD_LOW == ((PORTB>>pin)&0x01u))
+            {
+
+                returned_value = STD_LOW;
+            }
+            else
+            {
+
+                returned_value = STD_HIGH;
+            }
+            break;
+        }
+        case 0xC:
+        {
+            if(STD_LOW == ((PORTC>>pin)&0x01u))
+            {
+
+                returned_value = STD_LOW;
+            }
+            else
+            {
+
+                returned_value = STD_HIGH;
+            }
+            break;
+        }
+        default:
+        {
+
+            break;
+        }
+    }
+    return returned_value;
 }

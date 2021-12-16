@@ -7,6 +7,13 @@
       <logicalFolder name="DIO" displayName="DIO" projectFiles="true">
         <itemPath>DIO/dio.h</itemPath>
       </logicalFolder>
+      <logicalFolder name="MCC Generated Files"
+                     displayName="MCC Generated Files"
+                     projectFiles="true">
+        <itemPath>mcc_generated_files/pin_manager.h</itemPath>
+        <itemPath>mcc_generated_files/mcc.h</itemPath>
+        <itemPath>mcc_generated_files/device_config.h</itemPath>
+      </logicalFolder>
       <logicalFolder name="TYPES" displayName="TYPES" projectFiles="true">
         <itemPath>TYPES/types.h</itemPath>
       </logicalFolder>
@@ -22,12 +29,20 @@
       <logicalFolder name="DIO" displayName="DIO" projectFiles="true">
         <itemPath>DIO/dio.c</itemPath>
       </logicalFolder>
+      <logicalFolder name="MCC Generated Files"
+                     displayName="MCC Generated Files"
+                     projectFiles="true">
+        <itemPath>mcc_generated_files/device_config.c</itemPath>
+        <itemPath>mcc_generated_files/mcc.c</itemPath>
+        <itemPath>mcc_generated_files/pin_manager.c</itemPath>
+      </logicalFolder>
       <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
+      <itemPath>Christmas_Lights_System.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -189,7 +204,9 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-3fff"/>
         <property key="memories.rww" value="true"/>
-        <property key="poweroptions.powerenable" value="true"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/GIT/Christmas_Lights_System/02_SW/Christmas_Lights_System.X/debug/default/Christmas_Lights_System_ptg"/>
         <property key="programmerToGoImageName" value="Christmas_Lights_System_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
@@ -271,9 +288,7 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-3fff"/>
         <property key="memories.rww" value="true"/>
-        <property key="poweroptions.powerenable" value="true"/>
-        <property key="programmerToGoFilePath"
-                  value="D:/GIT/Christmas_Lights_System/02_SW/Christmas_Lights_System.X/debug/default/Christmas_Lights_System_ptg"/>
+        <property key="poweroptions.powerenable" value="false"/>
         <property key="programmerToGoImageName" value="Christmas_Lights_System_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>

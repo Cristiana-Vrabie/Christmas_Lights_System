@@ -8,10 +8,20 @@
 DIO_OUTPUT_PIN 0
 DIO_INPUT_PIN 1
 ]
-"65
+"122
 [e E9317 . `uc
 STD_LOW 0
 STD_HIGH 1
+]
+"26 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+[e E9335 . `uc
+STD_LOW 0
+STD_HIGH 1
+]
+"53
+[e E9331 . `uc
+DIO_OUTPUT_PIN 0
+DIO_INPUT_PIN 1
 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
@@ -37,9 +47,166 @@ STD_HIGH 1
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"49 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+"54 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+[v _Dio_vSetPinDirection Dio_vSetPinDirection `(v  1 e 1 0 ]
+"122
+[v _Dio_vSetPinLevel Dio_vSetPinLevel `(v  1 e 1 0 ]
+"187
+[v _Dio_vGetPinLevel Dio_vGetPinLevel `(E9317  1 e 1 0 ]
+"50 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
 [v _main main `(v  1 e 1 0 ]
+"50 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"57
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"71
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"4624 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3795 ]
+"4764
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @3797 ]
+"4916
+[v _OSCEN OSCEN `VEuc  1 e 1 @3799 ]
+"4967
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3800 ]
+"5025
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @3801 ]
+"5196
+[v _PMD0 PMD0 `VEuc  1 e 1 @3804 ]
+"5273
+[v _PMD1 PMD1 `VEuc  1 e 1 @3805 ]
+"5337
+[v _PMD2 PMD2 `VEuc  1 e 1 @3806 ]
+"5382
+[v _PMD3 PMD3 `VEuc  1 e 1 @3807 ]
+"5420
+[v _PMD4 PMD4 `VEuc  1 e 1 @3808 ]
+"5462
+[v _PMD5 PMD5 `VEuc  1 e 1 @3809 ]
+"6724
+[v _INLVLA INLVLA `VEuc  1 e 1 @3848 ]
+"6786
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @3849 ]
+"6848
+[v _ODCONA ODCONA `VEuc  1 e 1 @3850 ]
+"6910
+[v _WPUA WPUA `VEuc  1 e 1 @3851 ]
+"6972
+[v _ANSELA ANSELA `VEuc  1 e 1 @3852 ]
+"7220
+[v _INLVLB INLVLB `VEuc  1 e 1 @3856 ]
+"7282
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @3857 ]
+"7344
+[v _ODCONB ODCONB `VEuc  1 e 1 @3858 ]
+"7406
+[v _WPUB WPUB `VEuc  1 e 1 @3859 ]
+"7468
+[v _ANSELB ANSELB `VEuc  1 e 1 @3860 ]
+"7716
+[v _INLVLC INLVLC `VEuc  1 e 1 @3864 ]
+"7778
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @3865 ]
+"7840
+[v _ODCONC ODCONC `VEuc  1 e 1 @3866 ]
+"7902
+[v _WPUC WPUC `VEuc  1 e 1 @3867 ]
+"7964
+[v _ANSELC ANSELC `VEuc  1 e 1 @3868 ]
+"8089
+[v _INLVLE INLVLE `VEuc  1 e 1 @3877 ]
+"8110
+[v _WPUE WPUE `VEuc  1 e 1 @3880 ]
+"14515
+[v _LATA LATA `VEuc  1 e 1 @3970 ]
+"14648
+[v _LATB LATB `VEuc  1 e 1 @3971 ]
+"14781
+[v _LATC LATC `VEuc  1 e 1 @3972 ]
+"14914
+[v _TRISA TRISA `VEuc  1 e 1 @3975 ]
+"15036
+[v _TRISB TRISB `VEuc  1 e 1 @3976 ]
+"15158
+[v _TRISC TRISC `VEuc  1 e 1 @3977 ]
+"15280
+[v _PORTA PORTA `VEuc  1 e 1 @3980 ]
+"15368
+[v _PORTB PORTB `VEuc  1 e 1 @3981 ]
+"15439
+[v _PORTC PORTC `VEuc  1 e 1 @3982 ]
+"26 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+[v _read_value_C3 read_value_C3 `E9335  1 e 1 0 ]
+"50
 [v _main main `(v  1 e 1 0 ]
 {
-"51
+"64
+} 0
+"50 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"55
+} 0
+"71
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"55 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"114
+} 0
+"57 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"69
+} 0
+"122 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+[v _Dio_vSetPinLevel Dio_vSetPinLevel `(v  1 e 1 0 ]
+{
+[v Dio_vSetPinLevel@port_pin port_pin `uc  1 a 1 wreg ]
+"125
+[v Dio_vSetPinLevel@pin pin `uc  1 a 1 5 ]
+"124
+[v Dio_vSetPinLevel@port port `uc  1 a 1 3 ]
+"122
+[v Dio_vSetPinLevel@port_pin port_pin `uc  1 a 1 wreg ]
+[v Dio_vSetPinLevel@level level `E9317  1 p 1 0 ]
+"127
+[v Dio_vSetPinLevel@port_pin port_pin `uc  1 a 1 4 ]
+"180
+} 0
+"54
+[v _Dio_vSetPinDirection Dio_vSetPinDirection `(v  1 e 1 0 ]
+{
+[v Dio_vSetPinDirection@port_pin port_pin `uc  1 a 1 wreg ]
+"57
+[v Dio_vSetPinDirection@pin pin `uc  1 a 1 5 ]
+"56
+[v Dio_vSetPinDirection@port port `uc  1 a 1 3 ]
+"54
+[v Dio_vSetPinDirection@port_pin port_pin `uc  1 a 1 wreg ]
+[v Dio_vSetPinDirection@direction direction `E9313  1 p 1 0 ]
+"59
+[v Dio_vSetPinDirection@port_pin port_pin `uc  1 a 1 4 ]
+"114
+} 0
+"187
+[v _Dio_vGetPinLevel Dio_vGetPinLevel `(E9317  1 e 1 0 ]
+{
+[v Dio_vGetPinLevel@port_pin port_pin `uc  1 a 1 wreg ]
+"190
+[v Dio_vGetPinLevel@pin pin `uc  1 a 1 5 ]
+"191
+[v Dio_vGetPinLevel@returned_value returned_value `E9317  1 a 1 4 ]
+"189
+[v Dio_vGetPinLevel@port port `uc  1 a 1 2 ]
+"187
+[v Dio_vGetPinLevel@port_pin port_pin `uc  1 a 1 wreg ]
+"191
+[v Dio_vGetPinLevel@port_pin port_pin `uc  1 a 1 3 ]
+"247
 } 0

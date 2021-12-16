@@ -24,6 +24,8 @@
 #define MASK_REGISTER_SET_BIT(reg, position)   (reg = reg | MASK_SET_BIT(position))
 #define MASK_8BIT_LSB(x)                  (x & MASK_GET_LSB)
 #define MASK_8BIT_MSB(x)                  ((x & MASK_GET_MSB) >> 4u)
+/*used for reading a bit from a register*/
+#define MASK_GET_BIT(reg, position)       ((reg>>position)&0x01u)
 
 /*----------------------------------------------------------------------------*/
 /*                                 Data types                                 */

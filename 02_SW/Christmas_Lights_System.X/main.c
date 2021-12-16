@@ -23,7 +23,7 @@
 /*----------------------------------------------------------------------------*/
 /*                             Global data at RAM                             */
 /*----------------------------------------------------------------------------*/
-
+Dio_tPinLogicLevel read_value_C3 = STD_LOW;
 /*----------------------------------------------------------------------------*/
 /*                             Global data at ROM                             */
 /*----------------------------------------------------------------------------*/
@@ -51,12 +51,14 @@ void main(void)
 {
 	SYSTEM_Initialize();
     Dio_vSetPinDirection(0xC4, DIO_OUTPUT_PIN);
+    Dio_vSetPinDirection(0xC3, DIO_INPUT_PIN);
     while(1) 
     {
-        __delay_ms(100);
         Dio_vSetPinLevel(0xC4, STD_LOW);
-        __delay_ms(100);
         Dio_vSetPinLevel(0xC4, STD_HIGH);
+        read_value_C3 = Dio_vGetPinLevel(0xC3);
+        
+        
     }
 
 }

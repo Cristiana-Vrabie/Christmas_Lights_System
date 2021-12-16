@@ -8,8 +8,8 @@
 # 2 "<built-in>" 2
 # 1 "main.c" 2
 # 11 "main.c"
-# 1 "./main.h" 1
-# 14 "./main.h"
+# 1 "./mcc_generated_files/mcc.h" 1
+# 49 "./mcc_generated_files/mcc.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -15728,12 +15728,114 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\xc.h" 2 3
-# 14 "./main.h" 2
+# 49 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/device_config.h" 1
+# 50 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/pin_manager.h" 1
+# 78 "./mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_Initialize (void);
+# 90 "./mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_IOC(void);
+# 51 "./mcc_generated_files/mcc.h" 2
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 53 "./mcc_generated_files/mcc.h" 2
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 1 3
+
+
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 1 3
+# 12 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 3
+extern int errno;
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
+
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\__null.h" 1 3
+# 9 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
+
+
+
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+
+
+extern char * cgets(char *);
+extern void cputs(const char *);
+# 54 "./mcc_generated_files/mcc.h" 2
+# 69 "./mcc_generated_files/mcc.h"
+void SYSTEM_Initialize(void);
+# 82 "./mcc_generated_files/mcc.h"
+void OSCILLATOR_Initialize(void);
+# 95 "./mcc_generated_files/mcc.h"
+void PMD_Initialize(void);
 # 11 "main.c" 2
 
-# 1 "./DIO/dio.h" 1
+# 1 "./main.h" 1
 # 12 "main.c" 2
-# 49 "main.c"
+
+# 1 "./DIO/dio.h" 1
+# 16 "./DIO/dio.h"
+# 1 "./DIO/../TYPES/types.h" 1
+# 16 "./DIO/dio.h" 2
+# 25 "./DIO/dio.h"
+typedef enum
+{
+    DIO_OUTPUT_PIN = 0u,
+    DIO_INPUT_PIN
+} Dio_tPinDirectionType;
+
+typedef enum
+{
+    STD_LOW = 0u,
+    STD_HIGH
+} Dio_tPinLogicLevel;
+# 55 "./DIO/dio.h"
+void Dio_vSetPinDirection(uint8_t port_pin, Dio_tPinDirectionType direction);
+
+
+
+
+
+
+
+void Dio_vSetPinLevel(uint8_t port_pin, Dio_tPinLogicLevel level);
+
+
+
+
+
+
+Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t port_pin);
+# 13 "main.c" 2
+# 26 "main.c"
+Dio_tPinLogicLevel read_value_C3 = STD_LOW;
+# 50 "main.c"
 void main(void)
 {
+ SYSTEM_Initialize();
+    Dio_vSetPinDirection(0xC4, DIO_OUTPUT_PIN);
+    Dio_vSetPinDirection(0xC3, DIO_INPUT_PIN);
+    while(1)
+    {
+        Dio_vSetPinLevel(0xC4, STD_LOW);
+        Dio_vSetPinLevel(0xC4, STD_HIGH);
+        read_value_C3 = Dio_vGetPinLevel(0xC3);
+
+
+    }
+
 }

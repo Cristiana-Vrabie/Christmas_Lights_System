@@ -64,9 +64,9 @@ void Dio_vSetPinLevel(uint8_t port_pin, Dio_tPinLogicLevel level);
 
 /**
  * \brief     This function gets the level of the pin
- * \param     pin - represents the microcontroller pin
- * \return    bool - pin level 
+ * \param     port_pin - represents the microcontroller pin
+ * \return    Dio_tPinLogicLevel - pin level 
  */
-Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t pin);
+Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t port_pin);
 
 #endif /* DIO_H_ */

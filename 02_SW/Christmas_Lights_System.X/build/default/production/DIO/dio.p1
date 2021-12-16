@@ -25,6 +25,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "14781
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h: 14781: extern volatile unsigned char LATC __attribute__((address(0xF84)));
 [v _LATC `Vuc ~T0 @X0 0 e@3972 ]
+"15280
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h: 15280: extern volatile unsigned char PORTA __attribute__((address(0xF8C)));
+[v _PORTA `Vuc ~T0 @X0 0 e@3980 ]
+"15368
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h: 15368: extern volatile unsigned char PORTB __attribute__((address(0xF8D)));
+[v _PORTB `Vuc ~T0 @X0 0 e@3981 ]
+"15439
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h: 15439: extern volatile unsigned char PORTC __attribute__((address(0xF8E)));
+[v _PORTC `Vuc ~T0 @X0 0 e@3982 ]
 "55 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h: 55: __asm("PPSLOCK equ 0E9Bh");
 [; <" PPSLOCK equ 0E9Bh ;# ">
@@ -1621,19 +1630,181 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 1393 ]
 }
 "187
-[; ;DIO/dio.c: 187: Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t pin)
+[; ;DIO/dio.c: 187: Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t port_pin)
 [v _Dio_vGetPinLevel `(E9317 ~T0 @X0 1 ef1`uc ]
 "188
 [; ;DIO/dio.c: 188: {
 {
 [e :U _Dio_vGetPinLevel ]
 "187
-[; ;DIO/dio.c: 187: Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t pin)
-[v _pin `uc ~T0 @X0 1 r1 ]
+[; ;DIO/dio.c: 187: Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t port_pin)
+[v _port_pin `uc ~T0 @X0 1 r1 ]
 "188
 [; ;DIO/dio.c: 188: {
 [f ]
+"189
+[; ;DIO/dio.c: 189:     uint8_t port;
+[v _port `uc ~T0 @X0 1 a ]
 "190
-[; ;DIO/dio.c: 190: }
+[; ;DIO/dio.c: 190:     uint8_t pin;
+[v _pin `uc ~T0 @X0 1 a ]
+"191
+[; ;DIO/dio.c: 191:     Dio_tPinLogicLevel returned_value = STD_LOW;
+[v _returned_value `E9317 ~T0 @X0 1 a ]
+[e = _returned_value . `E9317 0 ]
+"193
+[; ;DIO/dio.c: 193:     port = ((port_pin & (0xF0u)) >> 4u);
+[e = _port -> >> & -> _port_pin `ui -> 240 `ui -> 4 `ui `uc ]
+"194
+[; ;DIO/dio.c: 194:     pin = (port_pin & (0x0Fu));
+[e = _pin -> & -> _port_pin `ui -> 15 `ui `uc ]
+"196
+[; ;DIO/dio.c: 196:     switch(port)
+[e $U 1408  ]
+"197
+[; ;DIO/dio.c: 197:     {
+{
+"198
+[; ;DIO/dio.c: 198:         case 0xA:
+[e :U 1409 ]
+"199
+[; ;DIO/dio.c: 199:         {
+{
+"200
+[; ;DIO/dio.c: 200:             if(STD_LOW == ((PORTA>>pin)&0x01u))
+[e $ ! == -> . `E9317 0 `ui & -> >> -> _PORTA `i -> _pin `i `ui -> 1 `ui 1410  ]
+"201
+[; ;DIO/dio.c: 201:             {
+{
+"203
+[; ;DIO/dio.c: 203:                 returned_value = STD_LOW;
+[e = _returned_value . `E9317 0 ]
+"204
+[; ;DIO/dio.c: 204:             }
+}
+[e $U 1411  ]
+"205
+[; ;DIO/dio.c: 205:             else
+[e :U 1410 ]
+"206
+[; ;DIO/dio.c: 206:             {
+{
+"208
+[; ;DIO/dio.c: 208:                 returned_value = STD_HIGH;
+[e = _returned_value . `E9317 1 ]
+"209
+[; ;DIO/dio.c: 209:             }
+}
+[e :U 1411 ]
+"210
+[; ;DIO/dio.c: 210:             break;
+[e $U 1407  ]
+"211
+[; ;DIO/dio.c: 211:         }
+}
+"212
+[; ;DIO/dio.c: 212:         case 0xB:
+[e :U 1412 ]
+"213
+[; ;DIO/dio.c: 213:         {
+{
+"214
+[; ;DIO/dio.c: 214:             if(STD_LOW == ((PORTB>>pin)&0x01u))
+[e $ ! == -> . `E9317 0 `ui & -> >> -> _PORTB `i -> _pin `i `ui -> 1 `ui 1413  ]
+"215
+[; ;DIO/dio.c: 215:             {
+{
+"217
+[; ;DIO/dio.c: 217:                 returned_value = STD_LOW;
+[e = _returned_value . `E9317 0 ]
+"218
+[; ;DIO/dio.c: 218:             }
+}
+[e $U 1414  ]
+"219
+[; ;DIO/dio.c: 219:             else
+[e :U 1413 ]
+"220
+[; ;DIO/dio.c: 220:             {
+{
+"222
+[; ;DIO/dio.c: 222:                 returned_value = STD_HIGH;
+[e = _returned_value . `E9317 1 ]
+"223
+[; ;DIO/dio.c: 223:             }
+}
+[e :U 1414 ]
+"224
+[; ;DIO/dio.c: 224:             break;
+[e $U 1407  ]
+"225
+[; ;DIO/dio.c: 225:         }
+}
+"226
+[; ;DIO/dio.c: 226:         case 0xC:
+[e :U 1415 ]
+"227
+[; ;DIO/dio.c: 227:         {
+{
+"228
+[; ;DIO/dio.c: 228:             if(STD_LOW == ((PORTC>>pin)&0x01u))
+[e $ ! == -> . `E9317 0 `ui & -> >> -> _PORTC `i -> _pin `i `ui -> 1 `ui 1416  ]
+"229
+[; ;DIO/dio.c: 229:             {
+{
+"231
+[; ;DIO/dio.c: 231:                 returned_value = STD_LOW;
+[e = _returned_value . `E9317 0 ]
+"232
+[; ;DIO/dio.c: 232:             }
+}
+[e $U 1417  ]
+"233
+[; ;DIO/dio.c: 233:             else
+[e :U 1416 ]
+"234
+[; ;DIO/dio.c: 234:             {
+{
+"236
+[; ;DIO/dio.c: 236:                 returned_value = STD_HIGH;
+[e = _returned_value . `E9317 1 ]
+"237
+[; ;DIO/dio.c: 237:             }
+}
+[e :U 1417 ]
+"238
+[; ;DIO/dio.c: 238:             break;
+[e $U 1407  ]
+"239
+[; ;DIO/dio.c: 239:         }
+}
+"240
+[; ;DIO/dio.c: 240:         default:
+[e :U 1418 ]
+"241
+[; ;DIO/dio.c: 241:         {
+{
+"243
+[; ;DIO/dio.c: 243:             break;
+[e $U 1407  ]
+"244
+[; ;DIO/dio.c: 244:         }
+}
+"245
+[; ;DIO/dio.c: 245:     }
+}
+[e $U 1407  ]
+[e :U 1408 ]
+[e [\ -> _port `i , $ -> 10 `i 1409
+ , $ -> 11 `i 1412
+ , $ -> 12 `i 1415
+ 1418 ]
+[e :U 1407 ]
+"246
+[; ;DIO/dio.c: 246:     return returned_value;
+[e ) _returned_value ]
+[e $UE 1406  ]
+"247
+[; ;DIO/dio.c: 247: }
 [e :UE 1406 ]
 }

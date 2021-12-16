@@ -184,9 +184,66 @@ void Dio_vSetPinLevel(uint8_t port_pin, Dio_tPinLogicLevel level)
  * \param     pin - represents the microcontroller pin
  * \return    Dio_tPinLogicLevel - pin level 
  */
-Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t pin) 
+Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t port_pin) 
 {
+    uint8_t port;
+    uint8_t pin;
+    Dio_tPinLogicLevel returned_value = STD_LOW;
     
+    port = MASK_8BIT_MSB(port_pin);
+    pin = MASK_8BIT_LSB(port_pin);
+    
+    switch(port)
+    {
+        case 0xA: 
+        {
+            if(STD_LOW == MASK_GET_BIT(PORTA, pin)) 
+            {
+                /*Returned value from position pin of PORTA*/
+                returned_value = STD_LOW;
+            }
+            else 
+            {
+                /*Returned value from position pin of PORTA*/
+                returned_value = STD_HIGH;
+            }      
+            break;
+        }
+        case 0xB:
+        {
+            if(STD_LOW == MASK_GET_BIT(PORTB, pin)) 
+            {
+                /*Returned value from position pin of PORTB*/
+                returned_value = STD_LOW;
+            }
+            else 
+            {
+                /*Returned value from position pin of PORTB*/
+                returned_value = STD_HIGH;
+            }      
+            break;            
+        }
+        case 0xC:
+        {
+            if(STD_LOW == MASK_GET_BIT(PORTC, pin)) 
+            {
+                /*Returned value from position pin of PORTC*/
+                returned_value = STD_LOW;
+            }
+            else 
+            {
+                /*Returned value from position pin of PORTC*/
+                returned_value = STD_HIGH;
+            }      
+            break;
+        }
+        default: 
+        {
+            /* Do nothing */
+            break;
+        }
+    }
+    return returned_value;
 }
 /*----------------------------------------------------------------------------*/
 /*                     Implementation of local functions                      */
