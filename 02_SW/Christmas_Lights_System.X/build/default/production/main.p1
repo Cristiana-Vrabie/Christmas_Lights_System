@@ -1,28 +1,68 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"26 main.c
-[; ;main.c: 26: Dio_tPinLogicLevel read_value_C3 = STD_LOW;
-[c E9407 0 1 .. ]
-[n E9407 . STD_LOW STD_HIGH  ]
+"46 main.c
+[; ;main.c: 46: static eLightType light_type = LIGHT_TYPE0;
+[c E9422 0 1 2 3 4 5 6 7 8 9 10 .. ]
+[n E9422 . LIGHT_TYPE0 LIGHT_TYPE1 LIGHT_TYPE2 LIGHT_TYPE3 LIGHT_TYPE4 LIGHT_TYPE5 LIGHT_TYPE6 LIGHT_TYPE7 LIGHT_TYPE8 LIGHT_TYPE9 LIGHT_TYPE10  ]
 [p mainexit ]
-"72 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
+"73 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 73: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"53 main.c
-[; ;main.c: 53:     Dio_vSetPinDirection(0xC4, DIO_OUTPUT_PIN);
-[c E9403 0 1 .. ]
-[n E9403 . DIO_OUTPUT_PIN DIO_INPUT_PIN  ]
+"136 main.c
+[; ;main.c: 136:     Dio_vSetPinDirection(0xC2,DIO_OUTPUT_PIN);
+[c E9406 0 1 .. ]
+[n E9406 . DIO_OUTPUT_PIN DIO_INPUT_PIN  ]
 "55 ./DIO/dio.h
 [; ;./DIO/dio.h: 55: void Dio_vSetPinDirection(uint8_t port_pin, Dio_tPinDirectionType direction);
-[v _Dio_vSetPinDirection `(v ~T0 @X0 0 ef2`uc`E9403 ]
-"63
-[; ;./DIO/dio.h: 63: void Dio_vSetPinLevel(uint8_t port_pin, Dio_tPinLogicLevel level);
-[v _Dio_vSetPinLevel `(v ~T0 @X0 0 ef2`uc`E9407 ]
-"70
-[; ;./DIO/dio.h: 70: Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t port_pin);
-[v _Dio_vGetPinLevel `(E9407 ~T0 @X0 0 ef1`uc ]
+[v _Dio_vSetPinDirection `(v ~T0 @X0 0 ef2`uc`E9406 ]
+"39 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdlib.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdlib.h: 39: int rand (void);
+[v _rand `(i ~T0 @X0 0 ef ]
+"59 main.c
+[; ;main.c: 59: void Light_vLightType_0(void);
+[v _Light_vLightType_0 `(v ~T0 @X0 0 ef ]
+"66
+[; ;main.c: 66: void Light_vLightType_1(void);
+[v _Light_vLightType_1 `(v ~T0 @X0 0 ef ]
+"73
+[; ;main.c: 73: void Light_vLightType_2(void);
+[v _Light_vLightType_2 `(v ~T0 @X0 0 ef ]
+"80
+[; ;main.c: 80: void Light_vLightType_3(void);
+[v _Light_vLightType_3 `(v ~T0 @X0 0 ef ]
+"87
+[; ;main.c: 87: void Light_vLightType_4(void);
+[v _Light_vLightType_4 `(v ~T0 @X0 0 ef ]
+"94
+[; ;main.c: 94: void Light_vLightType_5(void);
+[v _Light_vLightType_5 `(v ~T0 @X0 0 ef ]
+"101
+[; ;main.c: 101: void Light_vLightType_6(void);
+[v _Light_vLightType_6 `(v ~T0 @X0 0 ef ]
+"108
+[; ;main.c: 108: void Light_vLightType_7(void);
+[v _Light_vLightType_7 `(v ~T0 @X0 0 ef ]
+"115
+[; ;main.c: 115: void Light_vLightType_8(void);
+[v _Light_vLightType_8 `(v ~T0 @X0 0 ef ]
+"122
+[; ;main.c: 122: void Light_vLightType_9(void);
+[v _Light_vLightType_9 `(v ~T0 @X0 0 ef ]
+"129
+[; ;main.c: 129: void Light_vLightType_10(void);
+[v _Light_vLightType_10 `(v ~T0 @X0 0 ef ]
 "124 ./mcc_generated_files/pwm1.h
 [; ;./mcc_generated_files/pwm1.h: 124: void PWM1_LoadDutyValue(uint16_t dutyValue);
 [v _PWM1_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
+"124 ./mcc_generated_files/pwm2.h
+[; ;./mcc_generated_files/pwm2.h: 124: void PWM2_LoadDutyValue(uint16_t dutyValue);
+[v _PWM2_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
+"129 ./mcc_generated_files/pwm3.h
+[; ;./mcc_generated_files/pwm3.h: 129:  void PWM3_LoadDutyValue(uint16_t dutyValue);
+[v _PWM3_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
+[v F183 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\builtins.h
+[v __delay `JF183 ~T0 @X0 0 e ]
+[p i __delay ]
 "55 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h: 55: __asm("PPSLOCK equ 0E9Bh");
 [; <" PPSLOCK equ 0E9Bh ;# ">
@@ -1274,58 +1314,903 @@ Version 4.0 HI-TECH Software Intermediate Code
 "25831
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h: 25831: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"26 main.c
-[; ;main.c: 26: Dio_tPinLogicLevel read_value_C3 = STD_LOW;
-[v _read_value_C3 `E9407 ~T0 @X0 1 e ]
-[i _read_value_C3
-. `E9407 0
+"46 main.c
+[; ;main.c: 46: static eLightType light_type = LIGHT_TYPE0;
+[v _light_type `E9422 ~T0 @X0 1 s ]
+[i _light_type
+. `E9422 0
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"50
-[; ;main.c: 50: void main(void)
+"133
+[; ;main.c: 133: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"51
-[; ;main.c: 51: {
+"134
+[; ;main.c: 134: {
 {
 [e :U _main ]
 [f ]
-"52
-[; ;main.c: 52:  SYSTEM_Initialize();
+"135
+[; ;main.c: 135:  SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"53
-[; ;main.c: 53:     Dio_vSetPinDirection(0xC4, DIO_OUTPUT_PIN);
-[e ( _Dio_vSetPinDirection (2 , -> -> 196 `i `uc . `E9403 0 ]
-"54
-[; ;main.c: 54:     Dio_vSetPinDirection(0xC3, DIO_INPUT_PIN);
-[e ( _Dio_vSetPinDirection (2 , -> -> 195 `i `uc . `E9403 1 ]
-"55
-[; ;main.c: 55:     while(1)
+"136
+[; ;main.c: 136:     Dio_vSetPinDirection(0xC2,DIO_OUTPUT_PIN);
+[e ( _Dio_vSetPinDirection (2 , -> -> 194 `i `uc . `E9406 0 ]
+"137
+[; ;main.c: 137:     Dio_vSetPinDirection(0xC4,DIO_OUTPUT_PIN);
+[e ( _Dio_vSetPinDirection (2 , -> -> 196 `i `uc . `E9406 0 ]
+"138
+[; ;main.c: 138:     Dio_vSetPinDirection(0xC5,DIO_OUTPUT_PIN);
+[e ( _Dio_vSetPinDirection (2 , -> -> 197 `i `uc . `E9406 0 ]
+"140
+[; ;main.c: 140:     while(1)
 [e :U 1382 ]
-"56
-[; ;main.c: 56:     {
+"141
+[; ;main.c: 141:     {
 {
-"57
-[; ;main.c: 57:         Dio_vSetPinLevel(0xC4, STD_LOW);
-[e ( _Dio_vSetPinLevel (2 , -> -> 196 `i `uc . `E9407 0 ]
-"58
-[; ;main.c: 58:         Dio_vSetPinLevel(0xC4, STD_HIGH);
-[e ( _Dio_vSetPinLevel (2 , -> -> 196 `i `uc . `E9407 1 ]
-"59
-[; ;main.c: 59:         read_value_C3 = Dio_vGetPinLevel(0xC3);
-[e = _read_value_C3 ( _Dio_vGetPinLevel (1 -> -> 195 `i `uc ]
-"60
-[; ;main.c: 60:         PWM1_LoadDutyValue(32768);
-[e ( _PWM1_LoadDutyValue (1 -> -> 32768 `l `us ]
-"61
-[; ;main.c: 61:         PWM1_LoadDutyValue(512);
-[e ( _PWM1_LoadDutyValue (1 -> -> 512 `i `us ]
-"64
-[; ;main.c: 64:     }
+"142
+[; ;main.c: 142:         light_type = rand() % 11;
+[e = _light_type -> % ( _rand ..  -> 11 `i `E9422 ]
+"143
+[; ;main.c: 143:         switch(light_type)
+[e $U 1385  ]
+"144
+[; ;main.c: 144:         {
+{
+"145
+[; ;main.c: 145:             case LIGHT_TYPE0:
+[e :U 1386 ]
+"146
+[; ;main.c: 146:             {
+{
+"147
+[; ;main.c: 147:                 Light_vLightType_0();
+[e ( _Light_vLightType_0 ..  ]
+"148
+[; ;main.c: 148:                 break;
+[e $U 1384  ]
+"149
+[; ;main.c: 149:             }
+}
+"150
+[; ;main.c: 150:             case LIGHT_TYPE1:
+[e :U 1387 ]
+"151
+[; ;main.c: 151:             {
+{
+"152
+[; ;main.c: 152:                 Light_vLightType_1();
+[e ( _Light_vLightType_1 ..  ]
+"153
+[; ;main.c: 153:                 break;
+[e $U 1384  ]
+"154
+[; ;main.c: 154:             }
+}
+"155
+[; ;main.c: 155:             case LIGHT_TYPE2:
+[e :U 1388 ]
+"156
+[; ;main.c: 156:             {
+{
+"157
+[; ;main.c: 157:                 Light_vLightType_2();
+[e ( _Light_vLightType_2 ..  ]
+"158
+[; ;main.c: 158:                 break;
+[e $U 1384  ]
+"159
+[; ;main.c: 159:             }
+}
+"160
+[; ;main.c: 160:             case LIGHT_TYPE3:
+[e :U 1389 ]
+"161
+[; ;main.c: 161:             {
+{
+"162
+[; ;main.c: 162:                 Light_vLightType_3();
+[e ( _Light_vLightType_3 ..  ]
+"163
+[; ;main.c: 163:                 break;
+[e $U 1384  ]
+"164
+[; ;main.c: 164:             }
+}
+"165
+[; ;main.c: 165:             case LIGHT_TYPE4:
+[e :U 1390 ]
+"166
+[; ;main.c: 166:             {
+{
+"167
+[; ;main.c: 167:                 Light_vLightType_4();
+[e ( _Light_vLightType_4 ..  ]
+"168
+[; ;main.c: 168:                 break;
+[e $U 1384  ]
+"169
+[; ;main.c: 169:             }case LIGHT_TYPE5:
+}
+[e :U 1391 ]
+"170
+[; ;main.c: 170:             {
+{
+"171
+[; ;main.c: 171:                 Light_vLightType_5();
+[e ( _Light_vLightType_5 ..  ]
+"172
+[; ;main.c: 172:                 break;
+[e $U 1384  ]
+"173
+[; ;main.c: 173:             }case LIGHT_TYPE6:
+}
+[e :U 1392 ]
+"174
+[; ;main.c: 174:             {
+{
+"175
+[; ;main.c: 175:                 Light_vLightType_6();
+[e ( _Light_vLightType_6 ..  ]
+"176
+[; ;main.c: 176:                 break;
+[e $U 1384  ]
+"177
+[; ;main.c: 177:             }
+}
+"178
+[; ;main.c: 178:             case LIGHT_TYPE7:
+[e :U 1393 ]
+"179
+[; ;main.c: 179:             {
+{
+"180
+[; ;main.c: 180:                 Light_vLightType_7();
+[e ( _Light_vLightType_7 ..  ]
+"181
+[; ;main.c: 181:                 break;
+[e $U 1384  ]
+"182
+[; ;main.c: 182:             }
+}
+"183
+[; ;main.c: 183:             case LIGHT_TYPE8:
+[e :U 1394 ]
+"184
+[; ;main.c: 184:                 Light_vLightType_8();
+[e ( _Light_vLightType_8 ..  ]
+"185
+[; ;main.c: 185:             {
+{
+"186
+[; ;main.c: 186:                 break;
+[e $U 1384  ]
+"187
+[; ;main.c: 187:             }
+}
+"188
+[; ;main.c: 188:             case LIGHT_TYPE9:
+[e :U 1395 ]
+"189
+[; ;main.c: 189:             {
+{
+"190
+[; ;main.c: 190:                 Light_vLightType_9();
+[e ( _Light_vLightType_9 ..  ]
+"191
+[; ;main.c: 191:                 break;
+[e $U 1384  ]
+"192
+[; ;main.c: 192:             }
+}
+"193
+[; ;main.c: 193:             case LIGHT_TYPE10:
+[e :U 1396 ]
+"194
+[; ;main.c: 194:             {
+{
+"195
+[; ;main.c: 195:                 Light_vLightType_10();
+[e ( _Light_vLightType_10 ..  ]
+"196
+[; ;main.c: 196:                 break;
+[e $U 1384  ]
+"197
+[; ;main.c: 197:             }
+}
+"198
+[; ;main.c: 198:             default:
+[e :U 1397 ]
+"199
+[; ;main.c: 199:             {
+{
+"200
+[; ;main.c: 200:                 light_type = LIGHT_TYPE0;
+[e = _light_type . `E9422 0 ]
+"201
+[; ;main.c: 201:                 break;
+[e $U 1384  ]
+"202
+[; ;main.c: 202:             }
+}
+"203
+[; ;main.c: 203:         }
+}
+[e $U 1384  ]
+[e :U 1385 ]
+[e [\ -> _light_type `ui , $ -> . `E9422 0 `ui 1386
+ , $ -> . `E9422 1 `ui 1387
+ , $ -> . `E9422 2 `ui 1388
+ , $ -> . `E9422 3 `ui 1389
+ , $ -> . `E9422 4 `ui 1390
+ , $ -> . `E9422 5 `ui 1391
+ , $ -> . `E9422 6 `ui 1392
+ , $ -> . `E9422 7 `ui 1393
+ , $ -> . `E9422 8 `ui 1394
+ , $ -> . `E9422 9 `ui 1395
+ , $ -> . `E9422 10 `ui 1396
+ 1397 ]
+[e :U 1384 ]
+"204
+[; ;main.c: 204:     }
 }
 [e :U 1381 ]
 [e $U 1382  ]
 [e :U 1383 ]
-"66
-[; ;main.c: 66: }
+"205
+[; ;main.c: 205: }
 [e :UE 1380 ]
+}
+"215
+[; ;main.c: 215: void Light_vLightType_0(void)
+[v _Light_vLightType_0 `(v ~T0 @X0 1 ef ]
+"216
+[; ;main.c: 216: {
+{
+[e :U _Light_vLightType_0 ]
+[f ]
+"217
+[; ;main.c: 217:     uint16_t duty_cycle = 0;
+[v _duty_cycle `us ~T0 @X0 1 a ]
+[e = _duty_cycle -> -> 0 `i `us ]
+"218
+[; ;main.c: 218:     for(duty_cycle = 0; duty_cycle < 1000; duty_cycle+=100)
+{
+[e = _duty_cycle -> -> 0 `i `us ]
+[e $ < -> _duty_cycle `ui -> -> 1000 `i `ui 1399  ]
+[e $U 1400  ]
+[e :U 1399 ]
+"219
+[; ;main.c: 219:     {
+{
+"220
+[; ;main.c: 220:         PWM1_LoadDutyValue(duty_cycle);
+[e ( _PWM1_LoadDutyValue (1 _duty_cycle ]
+"221
+[; ;main.c: 221:         PWM2_LoadDutyValue(duty_cycle);
+[e ( _PWM2_LoadDutyValue (1 _duty_cycle ]
+"222
+[; ;main.c: 222:         PWM3_LoadDutyValue(duty_cycle);
+[e ( _PWM3_LoadDutyValue (1 _duty_cycle ]
+"223
+[; ;main.c: 223:         _delay((unsigned long)((50)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"224
+[; ;main.c: 224:     }
+}
+[e =+ _duty_cycle -> -> 100 `i `us ]
+[e $ < -> _duty_cycle `ui -> -> 1000 `i `ui 1399  ]
+[e :U 1400 ]
+}
+"225
+[; ;main.c: 225: }
+[e :UE 1398 ]
+}
+"232
+[; ;main.c: 232: void Light_vLightType_1(void)
+[v _Light_vLightType_1 `(v ~T0 @X0 1 ef ]
+"233
+[; ;main.c: 233: {
+{
+[e :U _Light_vLightType_1 ]
+[f ]
+"234
+[; ;main.c: 234:     PWM1_LoadDutyValue(800);
+[e ( _PWM1_LoadDutyValue (1 -> -> 800 `i `us ]
+"235
+[; ;main.c: 235:     PWM2_LoadDutyValue(300);
+[e ( _PWM2_LoadDutyValue (1 -> -> 300 `i `us ]
+"236
+[; ;main.c: 236:     _delay((unsigned long)((300)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"237
+[; ;main.c: 237:     PWM3_LoadDutyValue(900);
+[e ( _PWM3_LoadDutyValue (1 -> -> 900 `i `us ]
+"238
+[; ;main.c: 238:     PWM1_LoadDutyValue(100);
+[e ( _PWM1_LoadDutyValue (1 -> -> 100 `i `us ]
+"239
+[; ;main.c: 239:     _delay((unsigned long)((200)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"240
+[; ;main.c: 240:     PWM2_LoadDutyValue(900);
+[e ( _PWM2_LoadDutyValue (1 -> -> 900 `i `us ]
+"241
+[; ;main.c: 241: }
+[e :UE 1402 ]
+}
+"248
+[; ;main.c: 248: void Light_vLightType_2(void)
+[v _Light_vLightType_2 `(v ~T0 @X0 1 ef ]
+"249
+[; ;main.c: 249: {
+{
+[e :U _Light_vLightType_2 ]
+[f ]
+"250
+[; ;main.c: 250:     uint8_t ucIdx = 0;
+[v _ucIdx `uc ~T0 @X0 1 a ]
+[e = _ucIdx -> -> 0 `i `uc ]
+"251
+[; ;main.c: 251:     for(ucIdx = 0; ucIdx < 3; ucIdx++)
+{
+[e = _ucIdx -> -> 0 `i `uc ]
+[e $ < -> _ucIdx `i -> 3 `i 1404  ]
+[e $U 1405  ]
+[e :U 1404 ]
+"252
+[; ;main.c: 252:     {
+{
+"253
+[; ;main.c: 253:         PWM1_LoadDutyValue(800);
+[e ( _PWM1_LoadDutyValue (1 -> -> 800 `i `us ]
+"254
+[; ;main.c: 254:         _delay((unsigned long)((300)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"255
+[; ;main.c: 255:         PWM1_LoadDutyValue(0);
+[e ( _PWM1_LoadDutyValue (1 -> -> 0 `i `us ]
+"256
+[; ;main.c: 256:         PWM2_LoadDutyValue(300);
+[e ( _PWM2_LoadDutyValue (1 -> -> 300 `i `us ]
+"257
+[; ;main.c: 257:         _delay((unsigned long)((300)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"258
+[; ;main.c: 258:         PWM2_LoadDutyValue(0);
+[e ( _PWM2_LoadDutyValue (1 -> -> 0 `i `us ]
+"259
+[; ;main.c: 259:         PWM3_LoadDutyValue(900);
+[e ( _PWM3_LoadDutyValue (1 -> -> 900 `i `us ]
+"260
+[; ;main.c: 260:         _delay((unsigned long)((300)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"261
+[; ;main.c: 261:         PWM3_LoadDutyValue(0);
+[e ( _PWM3_LoadDutyValue (1 -> -> 0 `i `us ]
+"262
+[; ;main.c: 262:     }
+}
+[e ++ _ucIdx -> -> 1 `i `uc ]
+[e $ < -> _ucIdx `i -> 3 `i 1404  ]
+[e :U 1405 ]
+}
+"263
+[; ;main.c: 263: }
+[e :UE 1403 ]
+}
+"270
+[; ;main.c: 270: void Light_vLightType_3(void)
+[v _Light_vLightType_3 `(v ~T0 @X0 1 ef ]
+"271
+[; ;main.c: 271: {
+{
+[e :U _Light_vLightType_3 ]
+[f ]
+"272
+[; ;main.c: 272:     uint16_t duty_cycle = 0;
+[v _duty_cycle `us ~T0 @X0 1 a ]
+[e = _duty_cycle -> -> 0 `i `us ]
+"273
+[; ;main.c: 273:     for(duty_cycle = 0; duty_cycle < 500; duty_cycle+=100)
+{
+[e = _duty_cycle -> -> 0 `i `us ]
+[e $ < -> _duty_cycle `ui -> -> 500 `i `ui 1408  ]
+[e $U 1409  ]
+[e :U 1408 ]
+"274
+[; ;main.c: 274:     {
+{
+"275
+[; ;main.c: 275:         PWM1_LoadDutyValue(duty_cycle);
+[e ( _PWM1_LoadDutyValue (1 _duty_cycle ]
+"276
+[; ;main.c: 276:         _delay((unsigned long)((50)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"277
+[; ;main.c: 277:         PWM2_LoadDutyValue(duty_cycle + 300);
+[e ( _PWM2_LoadDutyValue (1 -> + -> _duty_cycle `ui -> -> 300 `i `ui `us ]
+"278
+[; ;main.c: 278:         _delay((unsigned long)((50)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"279
+[; ;main.c: 279:         PWM3_LoadDutyValue(duty_cycle + 200);
+[e ( _PWM3_LoadDutyValue (1 -> + -> _duty_cycle `ui -> -> 200 `i `ui `us ]
+"280
+[; ;main.c: 280:         _delay((unsigned long)((30)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"281
+[; ;main.c: 281:     }
+}
+[e =+ _duty_cycle -> -> 100 `i `us ]
+[e $ < -> _duty_cycle `ui -> -> 500 `i `ui 1408  ]
+[e :U 1409 ]
+}
+"282
+[; ;main.c: 282: }
+[e :UE 1407 ]
+}
+"289
+[; ;main.c: 289: void Light_vLightType_4(void)
+[v _Light_vLightType_4 `(v ~T0 @X0 1 ef ]
+"290
+[; ;main.c: 290: {
+{
+[e :U _Light_vLightType_4 ]
+[f ]
+"291
+[; ;main.c: 291:     uint16_t duty_cycle = 999;
+[v _duty_cycle `us ~T0 @X0 1 a ]
+[e = _duty_cycle -> -> 999 `i `us ]
+"292
+[; ;main.c: 292:     for(duty_cycle = 999; duty_cycle > 151; duty_cycle-=150)
+{
+[e = _duty_cycle -> -> 999 `i `us ]
+[e $ > -> _duty_cycle `ui -> -> 151 `i `ui 1412  ]
+[e $U 1413  ]
+[e :U 1412 ]
+"293
+[; ;main.c: 293:     {
+{
+"294
+[; ;main.c: 294:         PWM1_LoadDutyValue(duty_cycle);
+[e ( _PWM1_LoadDutyValue (1 _duty_cycle ]
+"295
+[; ;main.c: 295:         _delay((unsigned long)((50)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"296
+[; ;main.c: 296:     }
+}
+[e =- _duty_cycle -> -> 150 `i `us ]
+[e $ > -> _duty_cycle `ui -> -> 151 `i `ui 1412  ]
+[e :U 1413 ]
+}
+"298
+[; ;main.c: 298:     for(duty_cycle = 0; duty_cycle < 999; duty_cycle+=150)
+{
+[e = _duty_cycle -> -> 0 `i `us ]
+[e $ < -> _duty_cycle `ui -> -> 999 `i `ui 1415  ]
+[e $U 1416  ]
+[e :U 1415 ]
+"299
+[; ;main.c: 299:     {
+{
+"300
+[; ;main.c: 300:         PWM2_LoadDutyValue(duty_cycle);
+[e ( _PWM2_LoadDutyValue (1 _duty_cycle ]
+"301
+[; ;main.c: 301:         _delay((unsigned long)((50)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"302
+[; ;main.c: 302:     }
+}
+[e =+ _duty_cycle -> -> 150 `i `us ]
+[e $ < -> _duty_cycle `ui -> -> 999 `i `ui 1415  ]
+[e :U 1416 ]
+}
+"304
+[; ;main.c: 304:     for(duty_cycle = 999; duty_cycle > 151; duty_cycle-=150)
+{
+[e = _duty_cycle -> -> 999 `i `us ]
+[e $ > -> _duty_cycle `ui -> -> 151 `i `ui 1418  ]
+[e $U 1419  ]
+[e :U 1418 ]
+"305
+[; ;main.c: 305:     {
+{
+"306
+[; ;main.c: 306:         PWM3_LoadDutyValue(duty_cycle);
+[e ( _PWM3_LoadDutyValue (1 _duty_cycle ]
+"307
+[; ;main.c: 307:         _delay((unsigned long)((50)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"308
+[; ;main.c: 308:     }
+}
+[e =- _duty_cycle -> -> 150 `i `us ]
+[e $ > -> _duty_cycle `ui -> -> 151 `i `ui 1418  ]
+[e :U 1419 ]
+}
+"309
+[; ;main.c: 309: }
+[e :UE 1411 ]
+}
+"316
+[; ;main.c: 316: void Light_vLightType_5(void)
+[v _Light_vLightType_5 `(v ~T0 @X0 1 ef ]
+"317
+[; ;main.c: 317: {
+{
+[e :U _Light_vLightType_5 ]
+[f ]
+"318
+[; ;main.c: 318:     uint16_t duty_cycle = 999;
+[v _duty_cycle `us ~T0 @X0 1 a ]
+[e = _duty_cycle -> -> 999 `i `us ]
+"319
+[; ;main.c: 319:     static uint8_t toggle = 0;
+[v F9459 `uc ~T0 @X0 1 s toggle ]
+[i F9459
+-> -> 0 `i `uc
+]
+"320
+[; ;main.c: 320:     for(duty_cycle = 999; duty_cycle > 151; duty_cycle-=150)
+{
+[e = _duty_cycle -> -> 999 `i `us ]
+[e $ > -> _duty_cycle `ui -> -> 151 `i `ui 1422  ]
+[e $U 1423  ]
+[e :U 1422 ]
+"321
+[; ;main.c: 321:     {
+{
+"322
+[; ;main.c: 322:         PWM3_LoadDutyValue(duty_cycle);
+[e ( _PWM3_LoadDutyValue (1 _duty_cycle ]
+"323
+[; ;main.c: 323:         if(toggle == 0)
+[e $ ! == -> F9459 `i -> 0 `i 1425  ]
+"324
+[; ;main.c: 324:         {
+{
+"325
+[; ;main.c: 325:             PWM2_LoadDutyValue(999);
+[e ( _PWM2_LoadDutyValue (1 -> -> 999 `i `us ]
+"326
+[; ;main.c: 326:             PWM1_LoadDutyValue(0);
+[e ( _PWM1_LoadDutyValue (1 -> -> 0 `i `us ]
+"327
+[; ;main.c: 327:             toggle = 1;
+[e = F9459 -> -> 1 `i `uc ]
+"328
+[; ;main.c: 328:         }
+}
+[e $U 1426  ]
+"329
+[; ;main.c: 329:         else
+[e :U 1425 ]
+"330
+[; ;main.c: 330:         {
+{
+"331
+[; ;main.c: 331:             PWM2_LoadDutyValue(0);
+[e ( _PWM2_LoadDutyValue (1 -> -> 0 `i `us ]
+"332
+[; ;main.c: 332:             PWM1_LoadDutyValue(999);
+[e ( _PWM1_LoadDutyValue (1 -> -> 999 `i `us ]
+"333
+[; ;main.c: 333:             toggle = 0;
+[e = F9459 -> -> 0 `i `uc ]
+"334
+[; ;main.c: 334:         }
+}
+[e :U 1426 ]
+"336
+[; ;main.c: 336:         _delay((unsigned long)((50)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"337
+[; ;main.c: 337:     }
+}
+[e =- _duty_cycle -> -> 150 `i `us ]
+[e $ > -> _duty_cycle `ui -> -> 151 `i `ui 1422  ]
+[e :U 1423 ]
+}
+"338
+[; ;main.c: 338: }
+[e :UE 1421 ]
+}
+"345
+[; ;main.c: 345: void Light_vLightType_6(void)
+[v _Light_vLightType_6 `(v ~T0 @X0 1 ef ]
+"346
+[; ;main.c: 346: {
+{
+[e :U _Light_vLightType_6 ]
+[f ]
+"347
+[; ;main.c: 347:     int ucIdx = 0;
+[v _ucIdx `i ~T0 @X0 1 a ]
+[e = _ucIdx -> 0 `i ]
+"348
+[; ;main.c: 348:     for(ucIdx = 0; ucIdx < 3; ucIdx++)
+{
+[e = _ucIdx -> 0 `i ]
+[e $ < _ucIdx -> 3 `i 1428  ]
+[e $U 1429  ]
+[e :U 1428 ]
+"349
+[; ;main.c: 349:     {
+{
+"350
+[; ;main.c: 350:         PWM1_LoadDutyValue(999);
+[e ( _PWM1_LoadDutyValue (1 -> -> 999 `i `us ]
+"351
+[; ;main.c: 351:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"352
+[; ;main.c: 352:         PWM1_LoadDutyValue(0);
+[e ( _PWM1_LoadDutyValue (1 -> -> 0 `i `us ]
+"353
+[; ;main.c: 353:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"354
+[; ;main.c: 354:         PWM1_LoadDutyValue(999);
+[e ( _PWM1_LoadDutyValue (1 -> -> 999 `i `us ]
+"355
+[; ;main.c: 355:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"356
+[; ;main.c: 356:         PWM1_LoadDutyValue(0);
+[e ( _PWM1_LoadDutyValue (1 -> -> 0 `i `us ]
+"357
+[; ;main.c: 357:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"358
+[; ;main.c: 358:         PWM1_LoadDutyValue(999);
+[e ( _PWM1_LoadDutyValue (1 -> -> 999 `i `us ]
+"359
+[; ;main.c: 359:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"360
+[; ;main.c: 360:     }
+}
+[e ++ _ucIdx -> 1 `i ]
+[e $ < _ucIdx -> 3 `i 1428  ]
+[e :U 1429 ]
+}
+"361
+[; ;main.c: 361: }
+[e :UE 1427 ]
+}
+"368
+[; ;main.c: 368: void Light_vLightType_7(void)
+[v _Light_vLightType_7 `(v ~T0 @X0 1 ef ]
+"369
+[; ;main.c: 369: {
+{
+[e :U _Light_vLightType_7 ]
+[f ]
+"370
+[; ;main.c: 370:     uint16_t duty_cycle = 999;
+[v _duty_cycle `us ~T0 @X0 1 a ]
+[e = _duty_cycle -> -> 999 `i `us ]
+"371
+[; ;main.c: 371:     PWM2_LoadDutyValue(999);
+[e ( _PWM2_LoadDutyValue (1 -> -> 999 `i `us ]
+"372
+[; ;main.c: 372:     _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"373
+[; ;main.c: 373:     PWM2_LoadDutyValue(0);
+[e ( _PWM2_LoadDutyValue (1 -> -> 0 `i `us ]
+"374
+[; ;main.c: 374:     for(duty_cycle = 999; duty_cycle > 151; duty_cycle-=150)
+{
+[e = _duty_cycle -> -> 999 `i `us ]
+[e $ > -> _duty_cycle `ui -> -> 151 `i `ui 1432  ]
+[e $U 1433  ]
+[e :U 1432 ]
+"375
+[; ;main.c: 375:     {
+{
+"376
+[; ;main.c: 376:         PWM1_LoadDutyValue(duty_cycle);
+[e ( _PWM1_LoadDutyValue (1 _duty_cycle ]
+"377
+[; ;main.c: 377:         PWM3_LoadDutyValue(duty_cycle);
+[e ( _PWM3_LoadDutyValue (1 _duty_cycle ]
+"378
+[; ;main.c: 378:         _delay((unsigned long)((50)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"379
+[; ;main.c: 379:     }
+}
+[e =- _duty_cycle -> -> 150 `i `us ]
+[e $ > -> _duty_cycle `ui -> -> 151 `i `ui 1432  ]
+[e :U 1433 ]
+}
+"380
+[; ;main.c: 380: }
+[e :UE 1431 ]
+}
+"387
+[; ;main.c: 387: void Light_vLightType_8(void)
+[v _Light_vLightType_8 `(v ~T0 @X0 1 ef ]
+"388
+[; ;main.c: 388: {
+{
+[e :U _Light_vLightType_8 ]
+[f ]
+"389
+[; ;main.c: 389:     int ucIdx = 0;
+[v _ucIdx `i ~T0 @X0 1 a ]
+[e = _ucIdx -> 0 `i ]
+"390
+[; ;main.c: 390:     for(ucIdx = 0; ucIdx < 3; ucIdx++)
+{
+[e = _ucIdx -> 0 `i ]
+[e $ < _ucIdx -> 3 `i 1436  ]
+[e $U 1437  ]
+[e :U 1436 ]
+"391
+[; ;main.c: 391:     {
+{
+"392
+[; ;main.c: 392:         PWM1_LoadDutyValue(999);
+[e ( _PWM1_LoadDutyValue (1 -> -> 999 `i `us ]
+"393
+[; ;main.c: 393:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"394
+[; ;main.c: 394:         PWM2_LoadDutyValue(999);
+[e ( _PWM2_LoadDutyValue (1 -> -> 999 `i `us ]
+"395
+[; ;main.c: 395:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"396
+[; ;main.c: 396:         PWM3_LoadDutyValue(999);
+[e ( _PWM3_LoadDutyValue (1 -> -> 999 `i `us ]
+"397
+[; ;main.c: 397:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"398
+[; ;main.c: 398:         PWM3_LoadDutyValue(999);
+[e ( _PWM3_LoadDutyValue (1 -> -> 999 `i `us ]
+"399
+[; ;main.c: 399:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"400
+[; ;main.c: 400:         PWM2_LoadDutyValue(999);
+[e ( _PWM2_LoadDutyValue (1 -> -> 999 `i `us ]
+"401
+[; ;main.c: 401:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"402
+[; ;main.c: 402:         PWM1_LoadDutyValue(999);
+[e ( _PWM1_LoadDutyValue (1 -> -> 999 `i `us ]
+"403
+[; ;main.c: 403:         _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"404
+[; ;main.c: 404:     }
+}
+[e ++ _ucIdx -> 1 `i ]
+[e $ < _ucIdx -> 3 `i 1436  ]
+[e :U 1437 ]
+}
+"405
+[; ;main.c: 405: }
+[e :UE 1435 ]
+}
+"412
+[; ;main.c: 412: void Light_vLightType_9(void)
+[v _Light_vLightType_9 `(v ~T0 @X0 1 ef ]
+"413
+[; ;main.c: 413: {
+{
+[e :U _Light_vLightType_9 ]
+[f ]
+"414
+[; ;main.c: 414:     uint8_t ucIdx = 0;
+[v _ucIdx `uc ~T0 @X0 1 a ]
+[e = _ucIdx -> -> 0 `i `uc ]
+"415
+[; ;main.c: 415:     uint16_t duty_cycle = 0;
+[v _duty_cycle `us ~T0 @X0 1 a ]
+[e = _duty_cycle -> -> 0 `i `us ]
+"416
+[; ;main.c: 416:     for(ucIdx = 0; ucIdx < 3; ucIdx++)
+{
+[e = _ucIdx -> -> 0 `i `uc ]
+[e $ < -> _ucIdx `i -> 3 `i 1440  ]
+[e $U 1441  ]
+[e :U 1440 ]
+"417
+[; ;main.c: 417:     {
+{
+"418
+[; ;main.c: 418:         PWM1_LoadDutyValue(0);
+[e ( _PWM1_LoadDutyValue (1 -> -> 0 `i `us ]
+"419
+[; ;main.c: 419:         PWM2_LoadDutyValue(999);
+[e ( _PWM2_LoadDutyValue (1 -> -> 999 `i `us ]
+"420
+[; ;main.c: 420:         PWM3_LoadDutyValue(999);
+[e ( _PWM3_LoadDutyValue (1 -> -> 999 `i `us ]
+"421
+[; ;main.c: 421:         for(duty_cycle = 999; duty_cycle > 151; duty_cycle-=150)
+{
+[e = _duty_cycle -> -> 999 `i `us ]
+[e $ > -> _duty_cycle `ui -> -> 151 `i `ui 1443  ]
+[e $U 1444  ]
+[e :U 1443 ]
+"422
+[; ;main.c: 422:         {
+{
+"423
+[; ;main.c: 423:             PWM2_LoadDutyValue(duty_cycle);
+[e ( _PWM2_LoadDutyValue (1 _duty_cycle ]
+"424
+[; ;main.c: 424:             PWM3_LoadDutyValue(duty_cycle);
+[e ( _PWM3_LoadDutyValue (1 _duty_cycle ]
+"425
+[; ;main.c: 425:             _delay((unsigned long)((50)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"426
+[; ;main.c: 426:         }
+}
+[e =- _duty_cycle -> -> 150 `i `us ]
+[e $ > -> _duty_cycle `ui -> -> 151 `i `ui 1443  ]
+[e :U 1444 ]
+}
+"427
+[; ;main.c: 427:         _delay((unsigned long)((50)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"428
+[; ;main.c: 428:     }
+}
+[e ++ _ucIdx -> -> 1 `i `uc ]
+[e $ < -> _ucIdx `i -> 3 `i 1440  ]
+[e :U 1441 ]
+}
+"429
+[; ;main.c: 429: }
+[e :UE 1439 ]
+}
+"436
+[; ;main.c: 436: void Light_vLightType_10(void)
+[v _Light_vLightType_10 `(v ~T0 @X0 1 ef ]
+"437
+[; ;main.c: 437: {
+{
+[e :U _Light_vLightType_10 ]
+[f ]
+"438
+[; ;main.c: 438:     uint16_t duty_cycle = 0;
+[v _duty_cycle `us ~T0 @X0 1 a ]
+[e = _duty_cycle -> -> 0 `i `us ]
+"439
+[; ;main.c: 439:         for(duty_cycle = 0; duty_cycle < 999; duty_cycle+=300)
+{
+[e = _duty_cycle -> -> 0 `i `us ]
+[e $ < -> _duty_cycle `ui -> -> 999 `i `ui 1447  ]
+[e $U 1448  ]
+[e :U 1447 ]
+"440
+[; ;main.c: 440:         {
+{
+"441
+[; ;main.c: 441:             PWM1_LoadDutyValue(duty_cycle);
+[e ( _PWM1_LoadDutyValue (1 _duty_cycle ]
+"442
+[; ;main.c: 442:             _delay((unsigned long)((10)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"443
+[; ;main.c: 443:         }
+}
+[e =+ _duty_cycle -> -> 300 `i `us ]
+[e $ < -> _duty_cycle `ui -> -> 999 `i `ui 1447  ]
+[e :U 1448 ]
+}
+"445
+[; ;main.c: 445: }
+[e :UE 1446 ]
 }

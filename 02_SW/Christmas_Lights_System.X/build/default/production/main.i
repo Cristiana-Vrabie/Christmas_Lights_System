@@ -15734,9 +15734,9 @@ unsigned char __t3rd16on(void);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 102 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
 # 114 "./mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_Initialize (void);
+# 126 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -15794,6 +15794,13 @@ void PWM2_LoadDutyValue(uint16_t dutyValue);
 # 156 "./mcc_generated_files/pwm2.h"
 _Bool PWM2_OutputStatusGet(void);
 # 56 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/pwm3.h" 1
+# 102 "./mcc_generated_files/pwm3.h"
+ void PWM3_Initialize(void);
+# 129 "./mcc_generated_files/pwm3.h"
+ void PWM3_LoadDutyValue(uint16_t dutyValue);
+# 57 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/tmr2.h" 1
 # 79 "./mcc_generated_files/tmr2.h"
@@ -16006,12 +16013,12 @@ void TMR2_Period8BitSet(uint8_t periodVal);
 void TMR2_LoadPeriodRegister(uint8_t periodVal);
 # 813 "./mcc_generated_files/tmr2.h"
 _Bool TMR2_HasOverflowOccured(void);
-# 57 "./mcc_generated_files/mcc.h" 2
-# 72 "./mcc_generated_files/mcc.h"
+# 58 "./mcc_generated_files/mcc.h" 2
+# 73 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 85 "./mcc_generated_files/mcc.h"
+# 86 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 98 "./mcc_generated_files/mcc.h"
+# 99 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 11 "main.c" 2
 
@@ -16052,23 +16059,400 @@ void Dio_vSetPinLevel(uint8_t port_pin, Dio_tPinLogicLevel level);
 
 Dio_tPinLogicLevel Dio_vGetPinLevel(uint8_t port_pin);
 # 13 "main.c" 2
-# 26 "main.c"
-Dio_tPinLogicLevel read_value_C3 = STD_LOW;
-# 50 "main.c"
+# 22 "main.c"
+typedef enum
+{
+    LIGHT_TYPE0 = 0,
+    LIGHT_TYPE1,
+    LIGHT_TYPE2,
+    LIGHT_TYPE3,
+    LIGHT_TYPE4,
+    LIGHT_TYPE5,
+    LIGHT_TYPE6,
+    LIGHT_TYPE7,
+    LIGHT_TYPE8,
+    LIGHT_TYPE9,
+    LIGHT_TYPE10,
+} eLightType;
+# 46 "main.c"
+static eLightType light_type = LIGHT_TYPE0;
+# 59 "main.c"
+void Light_vLightType_0(void);
+
+
+
+
+
+
+void Light_vLightType_1(void);
+
+
+
+
+
+
+void Light_vLightType_2(void);
+
+
+
+
+
+
+void Light_vLightType_3(void);
+
+
+
+
+
+
+void Light_vLightType_4(void);
+
+
+
+
+
+
+void Light_vLightType_5(void);
+
+
+
+
+
+
+void Light_vLightType_6(void);
+
+
+
+
+
+
+void Light_vLightType_7(void);
+
+
+
+
+
+
+void Light_vLightType_8(void);
+
+
+
+
+
+
+void Light_vLightType_9(void);
+
+
+
+
+
+
+void Light_vLightType_10(void);
+
+
+
 void main(void)
 {
  SYSTEM_Initialize();
-    Dio_vSetPinDirection(0xC4, DIO_OUTPUT_PIN);
-    Dio_vSetPinDirection(0xC3, DIO_INPUT_PIN);
+    Dio_vSetPinDirection(0xC2,DIO_OUTPUT_PIN);
+    Dio_vSetPinDirection(0xC4,DIO_OUTPUT_PIN);
+    Dio_vSetPinDirection(0xC5,DIO_OUTPUT_PIN);
+
     while(1)
     {
-        Dio_vSetPinLevel(0xC4, STD_LOW);
-        Dio_vSetPinLevel(0xC4, STD_HIGH);
-        read_value_C3 = Dio_vGetPinLevel(0xC3);
-        PWM1_LoadDutyValue(32768);
-        PWM1_LoadDutyValue(512);
-
-
+        light_type = rand() % 11;
+        switch(light_type)
+        {
+            case LIGHT_TYPE0:
+            {
+                Light_vLightType_0();
+                break;
+            }
+            case LIGHT_TYPE1:
+            {
+                Light_vLightType_1();
+                break;
+            }
+            case LIGHT_TYPE2:
+            {
+                Light_vLightType_2();
+                break;
+            }
+            case LIGHT_TYPE3:
+            {
+                Light_vLightType_3();
+                break;
+            }
+            case LIGHT_TYPE4:
+            {
+                Light_vLightType_4();
+                break;
+            }case LIGHT_TYPE5:
+            {
+                Light_vLightType_5();
+                break;
+            }case LIGHT_TYPE6:
+            {
+                Light_vLightType_6();
+                break;
+            }
+            case LIGHT_TYPE7:
+            {
+                Light_vLightType_7();
+                break;
+            }
+            case LIGHT_TYPE8:
+                Light_vLightType_8();
+            {
+                break;
+            }
+            case LIGHT_TYPE9:
+            {
+                Light_vLightType_9();
+                break;
+            }
+            case LIGHT_TYPE10:
+            {
+                Light_vLightType_10();
+                break;
+            }
+            default:
+            {
+                light_type = LIGHT_TYPE0;
+                break;
+            }
+        }
     }
+}
+# 215 "main.c"
+void Light_vLightType_0(void)
+{
+    uint16_t duty_cycle = 0;
+    for(duty_cycle = 0; duty_cycle < 1000; duty_cycle+=100)
+    {
+        PWM1_LoadDutyValue(duty_cycle);
+        PWM2_LoadDutyValue(duty_cycle);
+        PWM3_LoadDutyValue(duty_cycle);
+        _delay((unsigned long)((50)*(16000000/4000.0)));
+    }
+}
+
+
+
+
+
+
+void Light_vLightType_1(void)
+{
+    PWM1_LoadDutyValue(800);
+    PWM2_LoadDutyValue(300);
+    _delay((unsigned long)((300)*(16000000/4000.0)));
+    PWM3_LoadDutyValue(900);
+    PWM1_LoadDutyValue(100);
+    _delay((unsigned long)((200)*(16000000/4000.0)));
+    PWM2_LoadDutyValue(900);
+}
+
+
+
+
+
+
+void Light_vLightType_2(void)
+{
+    uint8_t ucIdx = 0;
+    for(ucIdx = 0; ucIdx < 3; ucIdx++)
+    {
+        PWM1_LoadDutyValue(800);
+        _delay((unsigned long)((300)*(16000000/4000.0)));
+        PWM1_LoadDutyValue(0);
+        PWM2_LoadDutyValue(300);
+        _delay((unsigned long)((300)*(16000000/4000.0)));
+        PWM2_LoadDutyValue(0);
+        PWM3_LoadDutyValue(900);
+        _delay((unsigned long)((300)*(16000000/4000.0)));
+        PWM3_LoadDutyValue(0);
+    }
+}
+
+
+
+
+
+
+void Light_vLightType_3(void)
+{
+    uint16_t duty_cycle = 0;
+    for(duty_cycle = 0; duty_cycle < 500; duty_cycle+=100)
+    {
+        PWM1_LoadDutyValue(duty_cycle);
+        _delay((unsigned long)((50)*(16000000/4000.0)));
+        PWM2_LoadDutyValue(duty_cycle + 300);
+        _delay((unsigned long)((50)*(16000000/4000.0)));
+        PWM3_LoadDutyValue(duty_cycle + 200);
+        _delay((unsigned long)((30)*(16000000/4000.0)));
+    }
+}
+
+
+
+
+
+
+void Light_vLightType_4(void)
+{
+    uint16_t duty_cycle = 999;
+    for(duty_cycle = 999; duty_cycle > 151; duty_cycle-=150)
+    {
+        PWM1_LoadDutyValue(duty_cycle);
+        _delay((unsigned long)((50)*(16000000/4000.0)));
+    }
+
+    for(duty_cycle = 0; duty_cycle < 999; duty_cycle+=150)
+    {
+        PWM2_LoadDutyValue(duty_cycle);
+        _delay((unsigned long)((50)*(16000000/4000.0)));
+    }
+
+    for(duty_cycle = 999; duty_cycle > 151; duty_cycle-=150)
+    {
+        PWM3_LoadDutyValue(duty_cycle);
+        _delay((unsigned long)((50)*(16000000/4000.0)));
+    }
+}
+
+
+
+
+
+
+void Light_vLightType_5(void)
+{
+    uint16_t duty_cycle = 999;
+    static uint8_t toggle = 0;
+    for(duty_cycle = 999; duty_cycle > 151; duty_cycle-=150)
+    {
+        PWM3_LoadDutyValue(duty_cycle);
+        if(toggle == 0)
+        {
+            PWM2_LoadDutyValue(999);
+            PWM1_LoadDutyValue(0);
+            toggle = 1;
+        }
+        else
+        {
+            PWM2_LoadDutyValue(0);
+            PWM1_LoadDutyValue(999);
+            toggle = 0;
+        }
+
+        _delay((unsigned long)((50)*(16000000/4000.0)));
+    }
+}
+
+
+
+
+
+
+void Light_vLightType_6(void)
+{
+    int ucIdx = 0;
+    for(ucIdx = 0; ucIdx < 3; ucIdx++)
+    {
+        PWM1_LoadDutyValue(999);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+        PWM1_LoadDutyValue(0);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+        PWM1_LoadDutyValue(999);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+        PWM1_LoadDutyValue(0);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+        PWM1_LoadDutyValue(999);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+    }
+}
+
+
+
+
+
+
+void Light_vLightType_7(void)
+{
+    uint16_t duty_cycle = 999;
+    PWM2_LoadDutyValue(999);
+    _delay((unsigned long)((100)*(16000000/4000.0)));
+    PWM2_LoadDutyValue(0);
+    for(duty_cycle = 999; duty_cycle > 151; duty_cycle-=150)
+    {
+        PWM1_LoadDutyValue(duty_cycle);
+        PWM3_LoadDutyValue(duty_cycle);
+        _delay((unsigned long)((50)*(16000000/4000.0)));
+    }
+}
+
+
+
+
+
+
+void Light_vLightType_8(void)
+{
+    int ucIdx = 0;
+    for(ucIdx = 0; ucIdx < 3; ucIdx++)
+    {
+        PWM1_LoadDutyValue(999);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+        PWM2_LoadDutyValue(999);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+        PWM3_LoadDutyValue(999);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+        PWM3_LoadDutyValue(999);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+        PWM2_LoadDutyValue(999);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+        PWM1_LoadDutyValue(999);
+        _delay((unsigned long)((100)*(16000000/4000.0)));
+    }
+}
+
+
+
+
+
+
+void Light_vLightType_9(void)
+{
+    uint8_t ucIdx = 0;
+    uint16_t duty_cycle = 0;
+    for(ucIdx = 0; ucIdx < 3; ucIdx++)
+    {
+        PWM1_LoadDutyValue(0);
+        PWM2_LoadDutyValue(999);
+        PWM3_LoadDutyValue(999);
+        for(duty_cycle = 999; duty_cycle > 151; duty_cycle-=150)
+        {
+            PWM2_LoadDutyValue(duty_cycle);
+            PWM3_LoadDutyValue(duty_cycle);
+            _delay((unsigned long)((50)*(16000000/4000.0)));
+        }
+        _delay((unsigned long)((50)*(16000000/4000.0)));
+    }
+}
+
+
+
+
+
+
+void Light_vLightType_10(void)
+{
+    uint16_t duty_cycle = 0;
+        for(duty_cycle = 0; duty_cycle < 999; duty_cycle+=300)
+        {
+            PWM1_LoadDutyValue(duty_cycle);
+            _delay((unsigned long)((10)*(16000000/4000.0)));
+        }
 
 }

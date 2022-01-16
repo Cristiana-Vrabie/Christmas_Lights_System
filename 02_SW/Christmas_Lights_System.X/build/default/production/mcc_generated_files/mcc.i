@@ -15734,9 +15734,9 @@ unsigned char __t3rd16on(void);
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 102 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
 # 114 "mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_Initialize (void);
+# 126 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -15794,6 +15794,13 @@ void PWM2_LoadDutyValue(uint16_t dutyValue);
 # 156 "mcc_generated_files/pwm2.h"
 _Bool PWM2_OutputStatusGet(void);
 # 56 "mcc_generated_files/mcc.h" 2
+
+# 1 "mcc_generated_files/pwm3.h" 1
+# 102 "mcc_generated_files/pwm3.h"
+ void PWM3_Initialize(void);
+# 129 "mcc_generated_files/pwm3.h"
+ void PWM3_LoadDutyValue(uint16_t dutyValue);
+# 57 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/tmr2.h" 1
 # 79 "mcc_generated_files/tmr2.h"
@@ -16006,12 +16013,12 @@ void TMR2_Period8BitSet(uint8_t periodVal);
 void TMR2_LoadPeriodRegister(uint8_t periodVal);
 # 813 "mcc_generated_files/tmr2.h"
 _Bool TMR2_HasOverflowOccured(void);
-# 57 "mcc_generated_files/mcc.h" 2
-# 72 "mcc_generated_files/mcc.h"
+# 58 "mcc_generated_files/mcc.h" 2
+# 73 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 85 "mcc_generated_files/mcc.h"
+# 86 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 98 "mcc_generated_files/mcc.h"
+# 99 "mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 47 "mcc_generated_files/mcc.c" 2
 
@@ -16024,6 +16031,7 @@ void SYSTEM_Initialize(void)
     OSCILLATOR_Initialize();
     PWM1_Initialize();
     PWM2_Initialize();
+    PWM3_Initialize();
     TMR2_Initialize();
 }
 

@@ -12,24 +12,39 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $dist/default/production\Christmas_Lights_System.X.production.o
-cinit CODE 0 3B1A 3B1A C 1
+cinit CODE 0 3390 3390 16 1
 idloc IDLOC 5 200000 200000 100 1
-text0 CODE 0 3C40 3C40 54 1
-text1 CODE 0 3B6A 3B6A 1A 1
-text2 CODE 0 3BA0 3BA0 1E 1
-text3 CODE 0 3B3C 3B3C 16 1
-text4 CODE 0 3B26 3B26 16 1
-text5 CODE 0 3B84 3B84 1C 1
-text6 CODE 0 3BEC 3BEC 54 1
-text7 CODE 0 3B52 3B52 18 1
-text8 CODE 0 3BBE 3BBE 2E 1
-text9 CODE 0 3EB6 3EB6 14A 1
-text10 CODE 0 3D6C 3D6C 14A 1
-text11 CODE 0 3C94 3C94 D8 1
-cstackCOMRAM COMRAM 1 1 1 6 1
-bssCOMRAM COMRAM 1 7 7 1 1
+text0 CODE 0 3D9E 3D9E 118 1
+text1 CODE 0 361E 361E 6C 1
+text2 CODE 0 3548 3548 6A 1
+text3 CODE 0 3A16 3A16 B0 1
+text4 CODE 0 33F8 33F8 1E 1
+text5 CODE 0 33DA 33DA 1E 1
+text6 CODE 0 337A 337A 16 1
+text7 CODE 0 3364 3364 16 1
+text8 CODE 0 334E 334E 16 1
+text9 CODE 0 33BE 33BE 1C 1
+text10 CODE 0 34F0 34F0 58 1
+text11 CODE 0 33A6 33A6 18 1
+text12 CODE 0 3968 3968 AE 1
+text13 CODE 0 3C94 3C94 10A 1
+text14 CODE 0 36F8 36F8 88 1
+text15 CODE 0 3AC6 3AC6 E6 1
+text16 CODE 0 381C 381C A0 1
+text17 CODE 0 3BAC 3BAC E8 1
+text18 CODE 0 3780 3780 9C 1
+text19 CODE 0 38BC 38BC AC 1
+text20 CODE 0 34A6 34A6 4A 1
+text21 CODE 0 368A 368A 6E 1
+text22 CODE 0 35B2 35B2 6C 1
+text23 CODE 0 3472 3472 34 1
+text24 CODE 0 3444 3444 2E 1
+text25 CODE 0 3416 3416 2E 1
+text26 CODE 0 3EB6 3EB6 14A 1
+cstackCOMRAM COMRAM 1 1 1 1A 1
+bssCOMRAM COMRAM 1 1B 1B 6 1
 config CONFIG 4 300000 300000 C 1
-$C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
+$C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
 idloc IDLOC 5 200000 200000 100 1
 init CODE 0 0 0 4 1
 config CONFIG 4 300000 300000 C 1
@@ -46,14 +61,14 @@ BANK1 100-1FF 1
 BANK2 200-2FF 1
 BANK3 300-3FF 1
 BANK4 400-4FF 1
-CONST 4-3B19 1
+CONST 4-334D 1
 STACK 60-4FF 1
-SMALLCONST 500-3B19 1
-CODE 4-3B19 1
-BIGRAM 8-4FF 1
-COMRAM 8-5F 1
+SMALLCONST 500-334D 1
+CODE 4-334D 1
+BIGRAM 21-4FF 1
+COMRAM 21-5F 1
 EEDATA 310000-3100FF 1
-MEDIUMCONST 500-3B19 1
+MEDIUMCONST 500-334D 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -68,164 +83,354 @@ MEDIUMCONST 500-3B19 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Christmas_Lights_System.X.production.o
-3C94 text11 CODE >187:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3C96 text11 CODE >191:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3C9A text11 CODE >193:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3CA2 text11 CODE >194:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3CA8 text11 CODE >196:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3CAC text11 CODE >200:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3CD2 text11 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3CD6 text11 CODE >204:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3CDA text11 CODE >208:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3CE2 text11 CODE >214:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D0C text11 CODE >228:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D36 text11 CODE >245:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D40 text11 CODE >245:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D4E text11 CODE >245:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D56 text11 CODE >245:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D5E text11 CODE >245:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D68 text11 CODE >246:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D6A text11 CODE >247:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D6C text10 CODE >54:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D6E text10 CODE >59:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D76 text10 CODE >60:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D7C text10 CODE >62:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D80 text10 CODE >66:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3D90 text10 CODE >69:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3DB0 text10 CODE >70:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3DB4 text10 CODE >74:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3DD6 text10 CODE >80:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3DE6 text10 CODE >83:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3E06 text10 CODE >84:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3E0A text10 CODE >88:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3E2C text10 CODE >94:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3E3C text10 CODE >97:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3E5C text10 CODE >98:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3E60 text10 CODE >102:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3E82 text10 CODE >111:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3E8C text10 CODE >111:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3E9A text10 CODE >111:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3EA2 text10 CODE >111:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3EAA text10 CODE >111:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3EB4 text10 CODE >114:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3EB6 text9 CODE >122:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3EB8 text9 CODE >127:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3EC0 text9 CODE >128:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3EC6 text9 CODE >130:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3ECA text9 CODE >134:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3EDA text9 CODE >137:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3EFA text9 CODE >138:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3EFE text9 CODE >142:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3F20 text9 CODE >148:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3F30 text9 CODE >151:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3F50 text9 CODE >152:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3F54 text9 CODE >156:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3F76 text9 CODE >162:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3F86 text9 CODE >165:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3FA6 text9 CODE >166:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3FAA text9 CODE >170:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3FCC text9 CODE >179:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3FD6 text9 CODE >179:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3FE4 text9 CODE >179:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3FEC text9 CODE >179:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3FF4 text9 CODE >179:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3FFE text9 CODE >180:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-3BBE text8 CODE >82:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3BBE text8 CODE >84:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3BC6 text8 CODE >87:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3BD4 text8 CODE >89:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3BE2 text8 CODE >90:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3BE6 text8 CODE >91:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3BEA text8 CODE >98:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3B52 text7 CODE >60:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B52 text7 CODE >63:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B58 text7 CODE >65:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B5C text7 CODE >67:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B60 text7 CODE >69:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B64 text7 CODE >71:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B68 text7 CODE >72:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3BEC text6 CODE >55:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3BEC text6 CODE >60:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3BF0 text6 CODE >61:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3BF4 text6 CODE >62:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3BF8 text6 CODE >67:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3BFA text6 CODE >68:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3BFC text6 CODE >69:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C00 text6 CODE >74:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C04 text6 CODE >75:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C06 text6 CODE >76:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C08 text6 CODE >81:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C0C text6 CODE >82:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C10 text6 CODE >83:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C14 text6 CODE >84:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C18 text6 CODE >89:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C1C text6 CODE >90:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C20 text6 CODE >91:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C24 text6 CODE >96:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C26 text6 CODE >97:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C28 text6 CODE >98:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C2A text6 CODE >103:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C2C text6 CODE >104:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C2E text6 CODE >105:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C30 text6 CODE >106:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C34 text6 CODE >115:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C3A text6 CODE >116:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3C3E text6 CODE >117:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
-3B84 text5 CODE >74:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B84 text5 CODE >77:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B8A text5 CODE >79:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B8E text5 CODE >81:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B92 text5 CODE >83:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B96 text5 CODE >85:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B9A text5 CODE >87:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B9E text5 CODE >88:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B26 text4 CODE >64:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3B26 text4 CODE >69:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3B2A text4 CODE >72:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3B2E text4 CODE >75:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3B32 text4 CODE >78:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3B3A text4 CODE >80:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
-3B3C text3 CODE >64:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
-3B3C text3 CODE >69:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
-3B40 text3 CODE >72:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
-3B44 text3 CODE >75:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
-3B48 text3 CODE >78:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
-3B50 text3 CODE >80:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
-3BA0 text2 CODE >62:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
-3BA0 text2 CODE >67:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
-3BA4 text2 CODE >70:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
-3BA8 text2 CODE >73:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
-3BAC text2 CODE >76:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
-3BB0 text2 CODE >79:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
-3BB4 text2 CODE >82:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
-3BB8 text2 CODE >85:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
-3BBC text2 CODE >86:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
-3B6A text1 CODE >50:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B6A text1 CODE >52:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B6E text1 CODE >53:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B72 text1 CODE >54:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B76 text1 CODE >55:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B7A text1 CODE >56:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B7E text1 CODE >57:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3B82 text1 CODE >58:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
-3C40 text0 CODE >50:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-3C40 text0 CODE >52:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-3C44 text0 CODE >53:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-3C4E text0 CODE >54:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-3C58 text0 CODE >57:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-3C62 text0 CODE >58:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-3C6C text0 CODE >59:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-3C74 text0 CODE >60:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-3C80 text0 CODE >61:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-3B1A cinit CODE >6120:C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.s
-3B1A cinit CODE >6122:C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.s
-3B1A cinit CODE >6125:C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.s
-3B1A cinit CODE >6137:C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.s
-3B1C cinit CODE >6143:C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.s
-3B1C cinit CODE >6146:C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.s
-3B1E cinit CODE >6147:C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.s
-3B20 cinit CODE >6148:C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.s
-3B22 cinit CODE >6149:C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.s
+3EB6 text26 CODE >54:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3EB8 text26 CODE >59:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3EC0 text26 CODE >60:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3EC6 text26 CODE >62:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3ECA text26 CODE >66:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3EDA text26 CODE >69:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3EFA text26 CODE >70:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3EFE text26 CODE >74:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3F20 text26 CODE >80:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3F30 text26 CODE >83:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3F50 text26 CODE >84:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3F54 text26 CODE >88:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3F76 text26 CODE >94:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3F86 text26 CODE >97:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3FA6 text26 CODE >98:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3FAA text26 CODE >102:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3FCC text26 CODE >111:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3FD6 text26 CODE >111:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3FE4 text26 CODE >111:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3FEC text26 CODE >111:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3FF4 text26 CODE >111:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3FFE text26 CODE >114:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
+3416 text25 CODE >82:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+3416 text25 CODE >84:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+341E text25 CODE >87:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+342C text25 CODE >89:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+343A text25 CODE >90:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+343E text25 CODE >91:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+3442 text25 CODE >98:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+3444 text24 CODE >82:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+3444 text24 CODE >84:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+344C text24 CODE >87:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+345A text24 CODE >89:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+3468 text24 CODE >90:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+346C text24 CODE >91:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+3470 text24 CODE >98:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+3472 text23 CODE >74:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+3472 text23 CODE >77:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+348A text23 CODE >80:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+34A4 text23 CODE >81:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+35B2 text22 CODE >215:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+35B2 text22 CODE >217:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+35BA text22 CODE >218:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+35C2 text22 CODE >220:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+35CE text22 CODE >221:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+35DA text22 CODE >222:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+35E6 text22 CODE >223:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+35FE text22 CODE >224:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+361C text22 CODE >225:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+368A text21 CODE >232:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+368A text21 CODE >234:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3696 text21 CODE >235:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+36A2 text21 CODE >236:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+36BA text21 CODE >237:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+36C6 text21 CODE >238:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+36D2 text21 CODE >239:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+36EA text21 CODE >240:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+36F6 text21 CODE >241:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+34A6 text20 CODE >436:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+34A6 text20 CODE >438:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+34AE text20 CODE >439:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+34B6 text20 CODE >441:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+34C2 text20 CODE >442:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+34D0 text20 CODE >443:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+34EE text20 CODE >445:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+38BC text19 CODE >248:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+38BC text19 CODE >250:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+38C0 text19 CODE >251:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+38C4 text19 CODE >253:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+38D0 text19 CODE >254:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+38E8 text19 CODE >255:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+38F4 text19 CODE >256:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3900 text19 CODE >257:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3918 text19 CODE >258:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3924 text19 CODE >259:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3930 text19 CODE >260:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3948 text19 CODE >261:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3954 text19 CODE >262:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3966 text19 CODE >263:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3780 text18 CODE >270:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3780 text18 CODE >272:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3788 text18 CODE >273:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3790 text18 CODE >275:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+379C text18 CODE >276:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+37B4 text18 CODE >277:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+37C4 text18 CODE >278:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+37DC text18 CODE >279:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+37EC text18 CODE >280:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+37FC text18 CODE >281:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+381A text18 CODE >282:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3BAC text17 CODE >289:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3BAC text17 CODE >291:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3BB4 text17 CODE >292:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3BBC text17 CODE >294:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3BC8 text17 CODE >295:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3BE0 text17 CODE >296:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3BFE text17 CODE >298:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C06 text17 CODE >300:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C12 text17 CODE >301:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C2A text17 CODE >302:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C48 text17 CODE >304:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C50 text17 CODE >306:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C5C text17 CODE >307:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C74 text17 CODE >308:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C92 text17 CODE >309:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+381C text16 CODE >316:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+381C text16 CODE >318:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3824 text16 CODE >320:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+382C text16 CODE >322:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3838 text16 CODE >323:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3848 text16 CODE >325:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3854 text16 CODE >326:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3860 text16 CODE >327:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3864 text16 CODE >328:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3868 text16 CODE >331:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3874 text16 CODE >332:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3880 text16 CODE >333:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3884 text16 CODE >336:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+389C text16 CODE >337:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+38BA text16 CODE >338:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3AC6 text15 CODE >345:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3AC6 text15 CODE >347:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3ACE text15 CODE >348:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3AD6 text15 CODE >350:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3AE2 text15 CODE >351:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3AFA text15 CODE >352:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3B06 text15 CODE >353:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3B1E text15 CODE >354:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3B2A text15 CODE >355:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3B42 text15 CODE >356:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3B4E text15 CODE >357:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3B66 text15 CODE >358:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3B72 text15 CODE >359:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3B8A text15 CODE >360:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3BAA text15 CODE >361:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+36F8 text14 CODE >368:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+36F8 text14 CODE >370:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+36F8 text14 CODE >371:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3704 text14 CODE >372:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+371C text14 CODE >373:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3728 text14 CODE >374:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3730 text14 CODE >376:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+373C text14 CODE >377:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3748 text14 CODE >378:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3760 text14 CODE >379:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+377E text14 CODE >380:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C94 text13 CODE >387:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C94 text13 CODE >389:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3C9C text13 CODE >390:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3CA4 text13 CODE >392:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3CB0 text13 CODE >393:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3CC8 text13 CODE >394:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3CD4 text13 CODE >395:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3CEC text13 CODE >396:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3CF8 text13 CODE >397:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3D10 text13 CODE >398:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3D1C text13 CODE >399:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3D34 text13 CODE >400:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3D40 text13 CODE >401:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3D58 text13 CODE >402:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3D64 text13 CODE >403:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3D7C text13 CODE >404:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3D9C text13 CODE >405:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3968 text12 CODE >412:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3968 text12 CODE >414:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+396C text12 CODE >416:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3970 text12 CODE >418:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+397C text12 CODE >419:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3988 text12 CODE >420:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3994 text12 CODE >421:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+399C text12 CODE >423:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+39A8 text12 CODE >424:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+39B4 text12 CODE >425:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+39CC text12 CODE >426:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+39EA text12 CODE >427:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3A02 text12 CODE >428:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3A14 text12 CODE >429:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+33A6 text11 CODE >61:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33A6 text11 CODE >64:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33AC text11 CODE >66:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33B0 text11 CODE >68:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33B4 text11 CODE >70:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33B8 text11 CODE >72:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33BC text11 CODE >73:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+34F0 text10 CODE >55:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+34F0 text10 CODE >60:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+34F4 text10 CODE >61:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+34F8 text10 CODE >62:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+34FC text10 CODE >67:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+34FE text10 CODE >68:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3500 text10 CODE >69:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3504 text10 CODE >74:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3508 text10 CODE >75:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+350A text10 CODE >76:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+350C text10 CODE >81:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3510 text10 CODE >82:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3514 text10 CODE >83:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3518 text10 CODE >84:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+351C text10 CODE >89:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3520 text10 CODE >90:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3524 text10 CODE >91:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3528 text10 CODE >96:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+352A text10 CODE >97:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+352C text10 CODE >98:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+352E text10 CODE >103:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3530 text10 CODE >104:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3532 text10 CODE >105:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3534 text10 CODE >106:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3538 text10 CODE >115:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+353E text10 CODE >116:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3542 text10 CODE >117:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+3546 text10 CODE >118:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
+33BE text9 CODE >75:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33BE text9 CODE >78:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33C4 text9 CODE >80:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33C8 text9 CODE >82:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33CC text9 CODE >84:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33D0 text9 CODE >86:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33D4 text9 CODE >88:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33D8 text9 CODE >89:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+334E text8 CODE >64:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+334E text8 CODE >69:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+3352 text8 CODE >72:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+3356 text8 CODE >75:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+335A text8 CODE >78:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+3362 text8 CODE >80:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
+3364 text7 CODE >64:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+3364 text7 CODE >69:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+3368 text7 CODE >72:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+336C text7 CODE >75:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+3370 text7 CODE >78:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+3378 text7 CODE >80:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+337A text6 CODE >58:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+337A text6 CODE >62:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+337E text6 CODE >65:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+3382 text6 CODE >68:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+3386 text6 CODE >71:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+338E text6 CODE >72:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+33DA text5 CODE >62:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
+33DA text5 CODE >67:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
+33DE text5 CODE >70:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
+33E2 text5 CODE >73:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
+33E6 text5 CODE >76:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
+33EA text5 CODE >79:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
+33EE text5 CODE >82:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
+33F2 text5 CODE >85:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
+33F6 text5 CODE >86:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
+33F8 text4 CODE >50:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33F8 text4 CODE >52:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+33FC text4 CODE >53:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+3400 text4 CODE >54:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+3404 text4 CODE >55:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+3408 text4 CODE >56:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+340C text4 CODE >57:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+3410 text4 CODE >58:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+3414 text4 CODE >59:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+3A16 text3 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A16 text3 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A1A text3 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A28 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A30 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A34 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A42 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A4A text3 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A5C text3 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A60 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A64 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A6A text3 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A6C text3 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A7A text3 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A90 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A98 text3 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3A9E text3 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3AA4 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3AB4 text3 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3ABC text3 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3AC4 text3 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3548 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+3548 text2 CODE >119:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+3558 text2 CODE >121:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+3566 text2 CODE >122:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+3576 text2 CODE >123:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+3580 text2 CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+358A text2 CODE >125:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+35A0 text2 CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+35B0 text2 CODE >129:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+361E text1 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\rand.c
+361E text1 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\rand.c
+365A text1 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\rand.c
+3688 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\rand.c
+3D9E text0 CODE >133:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3D9E text0 CODE >135:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DA2 text0 CODE >136:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DAC text0 CODE >137:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DB6 text0 CODE >138:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DC0 text0 CODE >142:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DDC text0 CODE >143:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DE0 text0 CODE >147:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DE4 text0 CODE >148:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DE8 text0 CODE >152:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DEC text0 CODE >153:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DF0 text0 CODE >157:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DF4 text0 CODE >158:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DF8 text0 CODE >162:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3DFC text0 CODE >163:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E00 text0 CODE >167:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E04 text0 CODE >168:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E08 text0 CODE >171:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E0C text0 CODE >172:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E10 text0 CODE >175:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E14 text0 CODE >176:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E18 text0 CODE >180:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E1C text0 CODE >181:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E20 text0 CODE >184:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E24 text0 CODE >186:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E28 text0 CODE >190:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E2C text0 CODE >191:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E30 text0 CODE >195:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E34 text0 CODE >196:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E38 text0 CODE >200:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E3C text0 CODE >201:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E40 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E4A text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E58 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E60 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E68 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E70 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E78 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E80 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E88 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E90 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3E98 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3EA0 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3EA8 text0 CODE >203:D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+3390 cinit CODE >7005:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+3390 cinit CODE >7007:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+3390 cinit CODE >7010:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+3390 cinit CODE >7025:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+3392 cinit CODE >7026:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+3394 cinit CODE >7027:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+3396 cinit CODE >7028:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+3398 cinit CODE >7029:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+339A cinit CODE >7030:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+339C cinit CODE >7036:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+339C cinit CODE >7039:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+339E cinit CODE >7040:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+33A0 cinit CODE >7041:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
+33A2 cinit CODE >7042:C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -238,17 +443,19 @@ $dist/default/production\Christmas_Lights_System.X.production.o
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-Dio_vSetPinLevel@pin 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Christmas_Lights_System.X.production.o
 __Hspace_0 4000 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-__Hspace_1 8 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__Hspace_1 21 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Hspace_4 60000C 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_PWM1_Initialize 3B3C 0 CODE 0 text4 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_PWM1_Initialize 3364 0 CODE 0 text8 dist/default/production\Christmas_Lights_System.X.production.o
+_PWM3CON FA4 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+_PWM3DCH FA3 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+_PWM3DCL FA2 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Christmas_Lights_System.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Christmas_Lights_System.X.production.o
-_PMD_Initialize 3B84 0 CODE 0 text5 dist/default/production\Christmas_Lights_System.X.production.o
+_PMD_Initialize 33BE 0 CODE 0 text9 dist/default/production\Christmas_Lights_System.X.production.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Christmas_Lights_System.X.production.o
 _LATA F82 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _LATB F83 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
@@ -265,73 +472,85 @@ _WPUA F0B 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production
 _WPUB F13 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _WPUC F1B 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _WPUE F28 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
-_main 3C40 0 CODE 0 text0 dist/default/production\Christmas_Lights_System.X.production.o
-start 0 0 CODE 0 init C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
+___sp 0 0 STACK 2 stack C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+_main 3D9E 0 CODE 0 text0 dist/default/production\Christmas_Lights_System.X.production.o
+_rand 361E 0 CODE 0 text1 dist/default/production\Christmas_Lights_System.X.production.o
+_seed 1D 0 COMRAM 1 bssCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+start 0 0 CODE 0 init C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+__end_of_PWM3_LoadDutyValue 34A6 0 CODE 0 text23 dist/default/production\Christmas_Lights_System.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_rand 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_Dio_vSetPinLevel 4000 0 CODE 0 text9 dist/default/production\Christmas_Lights_System.X.production.o
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\Christmas_Lights_System.X.production.o
-_TMR2_Initialize 3BA0 0 CODE 0 text2 dist/default/production\Christmas_Lights_System.X.production.o
-_read_value_C3 7 0 COMRAM 1 bssCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+___awmod@sign 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+_TMR2_Initialize 33DA 0 CODE 0 text5 dist/default/production\Christmas_Lights_System.X.production.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-__size_of_Dio_vSetPinLevel 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-Dio_vGetPinLevel@port_pin 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
-intlevel0 0 0 CODE 0 text C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
-intlevel1 0 0 CODE 0 text C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
-intlevel2 0 0 CODE 0 text C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
-intlevel3 0 0 CODE 0 text C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
-_PWM1_Initialize 3B26 0 CODE 0 text4 dist/default/production\Christmas_Lights_System.X.production.o
+Light_vLightType_7@duty_cycle 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+Light_vLightType_8@ucIdx 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+intlevel0 0 0 CODE 0 text C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+intlevel1 0 0 CODE 0 text C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+intlevel2 0 0 CODE 0 text C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+intlevel3 0 0 CODE 0 text C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+_PWM1_Initialize 334E 0 CODE 0 text8 dist/default/production\Christmas_Lights_System.X.production.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+PWM3_LoadDutyValue@dutyValue 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Christmas_Lights_System.X.production.o
 Dio_vSetPinDirection@port_pin 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+_PWM3_LoadDutyValue 3472 0 CODE 0 text23 dist/default/production\Christmas_Lights_System.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_PMD_Initialize 3BA0 0 CODE 0 text5 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_PMD_Initialize 33DA 0 CODE 0 text9 dist/default/production\Christmas_Lights_System.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\Christmas_Lights_System.X.production.o
 __size_of_Dio_vSetPinDirection 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _ANSELA F0C 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _ANSELB F14 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _ANSELC F1C 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-Dio_vSetPinLevel@port 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
 _CCPR1H FAA 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _CCPR1L FA9 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _CCPR2H FA6 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _CCPR2L FA5 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_PWM2_Initialize 3B52 0 CODE 0 text3 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_PWM2_Initialize 337A 0 CODE 0 text7 dist/default/production\Christmas_Lights_System.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_Dio_vSetPinDirection 3EB6 0 CODE 0 text10 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of___lmul 35B2 0 CODE 0 text2 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Dio_vSetPinDirection 4000 0 CODE 0 text26 dist/default/production\Christmas_Lights_System.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Christmas_Lights_System.X.production.o
 __size_of_PWM1_LoadDutyValue 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Christmas_Lights_System.X.production.o
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\Christmas_Lights_System.X.production.o
 Dio_vSetPinDirection@pin 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+__end_of___awmod 3AC6 0 CODE 0 text3 dist/default/production\Christmas_Lights_System.X.production.o
 _INLVLA F08 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _INLVLB F10 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _INLVLC F18 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _INLVLE F25 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+_light_type 1C 0 COMRAM 1 bssCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\Christmas_Lights_System.X.production.o
-_PIN_MANAGER_Initialize 3BEC 0 CODE 0 text6 dist/default/production\Christmas_Lights_System.X.production.o
-start_initialization 3B1A 0 CODE 0 cinit dist/default/production\Christmas_Lights_System.X.production.o
+_PIN_MANAGER_Initialize 34F0 0 CODE 0 text10 dist/default/production\Christmas_Lights_System.X.production.o
+start_initialization 3390 0 CODE 0 cinit dist/default/production\Christmas_Lights_System.X.production.o
 _ODCONA F0A 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _ODCONB F12 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _ODCONC F1A 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _CCPTMRSbits FAD 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _OSCFRQ ED9 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+Light_vLightType_2@ucIdx 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __size_of_PWM1_Initialize 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Christmas_Lights_System.X.production.o
 Dio_vSetPinDirection@port 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
-_PWM2_Initialize 3B3C 0 CODE 0 text3 dist/default/production\Christmas_Lights_System.X.production.o
+_PWM2_Initialize 3364 0 CODE 0 text7 dist/default/production\Christmas_Lights_System.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-_RC1PPS EF3 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _RC2PPS EF4 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_SYSTEM_Initialize 3B84 0 CODE 0 text1 dist/default/production\Christmas_Lights_System.X.production.o
-Dio_vGetPinLevel@pin 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+_RC4PPS EF6 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+_RC5PPS EF7 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_SYSTEM_Initialize 3416 0 CODE 0 text4 dist/default/production\Christmas_Lights_System.X.production.o
 _T2CLKCON FBE 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
+Light_vLightType_3@duty_cycle 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+__end_of_PWM3_Initialize 3390 0 CODE 0 text6 dist/default/production\Christmas_Lights_System.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\Christmas_Lights_System.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\Christmas_Lights_System.X.production.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\Christmas_Lights_System.X.production.o
@@ -358,7 +577,9 @@ __Htext8 0 0 ABS 0 text8 dist/default/production\Christmas_Lights_System.X.produ
 __Htext9 0 0 ABS 0 text9 dist/default/production\Christmas_Lights_System.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Christmas_Lights_System.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Christmas_Lights_System.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+__end_of_PWM2_LoadDutyValue 3472 0 CODE 0 text24 dist/default/production\Christmas_Lights_System.X.production.o
+Light_vLightType_9@ucIdx 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\Christmas_Lights_System.X.production.o
 __Hconfig 30000C 0 CONFIG 4 config dist/default/production\Christmas_Lights_System.X.production.o
 _T2HLTbits FBD 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
@@ -387,6 +608,7 @@ __Ltext8 0 0 ABS 0 text8 dist/default/production\Christmas_Lights_System.X.produ
 __Ltext9 0 0 ABS 0 text9 dist/default/production\Christmas_Lights_System.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Christmas_Lights_System.X.production.o
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Christmas_Lights_System.X.production.o
+Light_vLightType_5@toggle 1B 0 COMRAM 1 bssCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\Christmas_Lights_System.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\Christmas_Lights_System.X.production.o
 __Hinit 4 0 CODE 0 init dist/default/production\Christmas_Lights_System.X.production.o
@@ -401,81 +623,161 @@ __Lrbit 0 0 COMRAM 1 rbit dist/default/production\Christmas_Lights_System.X.prod
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\Christmas_Lights_System.X.production.o
 __Ltemp 0 0 COMRAM 1 temp dist/default/production\Christmas_Lights_System.X.production.o
 __Ltext 0 0 ABS 0 text dist/default/production\Christmas_Lights_System.X.production.o
-Dio_vGetPinLevel@returned_value 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+PWM2_LoadDutyValue@dutyValue 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+___lmul 3548 0 CODE 0 text2 dist/default/production\Christmas_Lights_System.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\Christmas_Lights_System.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\Christmas_Lights_System.X.production.o
 _PR2 FBB 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __S0 4000 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-__S1 8 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__S1 21 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __S2 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+Light_vLightType_9@duty_cycle 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_PWM3_LoadDutyValue 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _T2RSTbits FBF 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+_PWM2_LoadDutyValue 3444 0 CODE 0 text24 dist/default/production\Christmas_Lights_System.X.production.o
 __size_of_PWM2_Initialize 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+_PWM3_Initialize 337A 0 CODE 0 text6 dist/default/production\Christmas_Lights_System.X.production.o
+Light_vLightType_6@ucIdx 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Christmas_Lights_System.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Christmas_Lights_System.X.production.o
-_SYSTEM_Initialize 3B6A 0 CODE 0 text1 dist/default/production\Christmas_Lights_System.X.production.o
+_SYSTEM_Initialize 33F8 0 CODE 0 text4 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_0 361E 0 CODE 0 text22 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_1 36F8 0 CODE 0 text21 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_2 3968 0 CODE 0 text19 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_3 381C 0 CODE 0 text18 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_4 3C94 0 CODE 0 text17 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_5 38BC 0 CODE 0 text16 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_6 3BAC 0 CODE 0 text15 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_7 3780 0 CODE 0 text14 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_8 3D9E 0 CODE 0 text13 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_9 3A16 0 CODE 0 text12 dist/default/production\Christmas_Lights_System.X.production.o
+Light_vLightType_4@duty_cycle 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\Christmas_Lights_System.X.production.o
 __Hramtop 500 0 RAM 0 ramtop dist/default/production\Christmas_Lights_System.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\Christmas_Lights_System.X.production.o
 __activetblptr 2 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\Christmas_Lights_System.X.production.o
+__size_of___lmul 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Htext10 0 0 ABS 0 text10 dist/default/production\Christmas_Lights_System.X.production.o
 __Htext11 0 0 ABS 0 text11 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\Christmas_Lights_System.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\Christmas_Lights_System.X.production.o
+___awmod@counter 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-Dio_vSetPinLevel@level 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
-__ptext10 3D6C 0 CODE 0 text10 dist/default/production\Christmas_Lights_System.X.production.o
-__ptext11 3C94 0 CODE 0 text11 dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_PIN_MANAGER_Initialize 3C40 0 CODE 0 text6 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext10 34F0 0 CODE 0 text10 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext11 33A6 0 CODE 0 text11 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext12 3968 0 CODE 0 text12 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext13 3C94 0 CODE 0 text13 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext14 36F8 0 CODE 0 text14 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext15 3AC6 0 CODE 0 text15 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext16 381C 0 CODE 0 text16 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext17 3BAC 0 CODE 0 text17 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext18 3780 0 CODE 0 text18 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext19 38BC 0 CODE 0 text19 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext20 34A6 0 CODE 0 text20 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext21 368A 0 CODE 0 text21 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext22 35B2 0 CODE 0 text22 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext23 3472 0 CODE 0 text23 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext24 3444 0 CODE 0 text24 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext25 3416 0 CODE 0 text25 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext26 3EB6 0 CODE 0 text26 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_PIN_MANAGER_Initialize 3548 0 CODE 0 text10 dist/default/production\Christmas_Lights_System.X.production.o
+___awmod 3A16 0 CODE 0 text3 dist/default/production\Christmas_Lights_System.X.production.o
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Christmas_Lights_System.X.production.o
 __Lbigram 0 0 ABS 0 bigram dist/default/production\Christmas_Lights_System.X.production.o
-Dio_vGetPinLevel@port 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_0 35B2 0 CODE 0 text22 dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_1 368A 0 CODE 0 text21 dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_2 38BC 0 CODE 0 text19 dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_3 3780 0 CODE 0 text18 dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_4 3BAC 0 CODE 0 text17 dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_5 381C 0 CODE 0 text16 dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_6 3AC6 0 CODE 0 text15 dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_7 36F8 0 CODE 0 text14 dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_8 3C94 0 CODE 0 text13 dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_9 3968 0 CODE 0 text12 dist/default/production\Christmas_Lights_System.X.production.o
+?_rand D 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\Christmas_Lights_System.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\Christmas_Lights_System.X.production.o
-_Dio_vSetPinDirection 3D6C 0 CODE 0 text10 dist/default/production\Christmas_Lights_System.X.production.o
+_Dio_vSetPinDirection 3EB6 0 CODE 0 text26 dist/default/production\Christmas_Lights_System.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Christmas_Lights_System.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Christmas_Lights_System.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
-_Dio_vGetPinLevel 3C94 0 CODE 0 text11 dist/default/production\Christmas_Lights_System.X.production.o
-stackhi 4FF 0 ABS 0 - C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
-stacklo 60 0 ABS 0 - C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
+isa$std 1 0 ABS 0 - C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+stackhi 4FF 0 ABS 0 - C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+stacklo 60 0 ABS 0 - C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production\Christmas_Lights_System.X.production.o
 _OSCCON1 ED3 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _OSCCON3 ED5 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _OSCTUNE ED8 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_10 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\Christmas_Lights_System.X.production.o
-Dio_vSetPinLevel@port_pin 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-__pbssCOMRAM 7 0 COMRAM 1 bssCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+__pbssCOMRAM 1B 0 COMRAM 1 bssCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_PWM3_Initialize 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _PIR4bits EC9 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
-end_of_initialization 3B1C 0 CODE 0 cinit dist/default/production\Christmas_Lights_System.X.production.o
+end_of_initialization 339C 0 CODE 0 cinit dist/default/production\Christmas_Lights_System.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Christmas_Lights_System.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\Christmas_Lights_System.X.production.o
+?___awmod 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+Light_vLightType_5@duty_cycle 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\Christmas_Lights_System.X.production.o
+___awmod@dividend 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Lramtop 500 0 RAM 0 ramtop dist/default/production\Christmas_Lights_System.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\Christmas_Lights_System.X.production.o
-__pcinit 3B1A 0 CODE 0 cinit dist/default/production\Christmas_Lights_System.X.production.o
-__ptext0 3C40 0 CODE 0 text0 dist/default/production\Christmas_Lights_System.X.production.o
-__ptext1 3B6A 0 CODE 0 text1 dist/default/production\Christmas_Lights_System.X.production.o
-__ptext2 3BA0 0 CODE 0 text2 dist/default/production\Christmas_Lights_System.X.production.o
-__ptext3 3B3C 0 CODE 0 text3 dist/default/production\Christmas_Lights_System.X.production.o
-__ptext4 3B26 0 CODE 0 text4 dist/default/production\Christmas_Lights_System.X.production.o
-__ptext5 3B84 0 CODE 0 text5 dist/default/production\Christmas_Lights_System.X.production.o
-__ptext6 3BEC 0 CODE 0 text6 dist/default/production\Christmas_Lights_System.X.production.o
-__ptext7 3B52 0 CODE 0 text7 dist/default/production\Christmas_Lights_System.X.production.o
-__ptext8 3BBE 0 CODE 0 text8 dist/default/production\Christmas_Lights_System.X.production.o
-__ptext9 3EB6 0 CODE 0 text9 dist/default/production\Christmas_Lights_System.X.production.o
+__pcinit 3390 0 CODE 0 cinit dist/default/production\Christmas_Lights_System.X.production.o
+__ptext0 3D9E 0 CODE 0 text0 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext1 361E 0 CODE 0 text1 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext2 3548 0 CODE 0 text2 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext3 3A16 0 CODE 0 text3 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext4 33F8 0 CODE 0 text4 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext5 33DA 0 CODE 0 text5 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext6 337A 0 CODE 0 text6 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext7 3364 0 CODE 0 text7 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext8 334E 0 CODE 0 text8 dist/default/production\Christmas_Lights_System.X.production.o
+__ptext9 33BE 0 CODE 0 text9 dist/default/production\Christmas_Lights_System.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\Christmas_Lights_System.X.production.o
 __Ltext10 0 0 ABS 0 text10 dist/default/production\Christmas_Lights_System.X.production.o
 __Ltext11 0 0 ABS 0 text11 dist/default/production\Christmas_Lights_System.X.production.o
-__ramtop 500 0 RAM 0 ramtop C:\Users\CRISTI~1\AppData\Local\Temp\xcAsjvc.o
-__end_of_PWM1_LoadDutyValue 3BEC 0 CODE 0 text8 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\Christmas_Lights_System.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\Christmas_Lights_System.X.production.o
+__ramtop 500 0 RAM 0 ramtop C:\Users\CRISTI~1\AppData\Local\Temp\xcAs46o.o
+Light_vLightType_0@duty_cycle 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_PWM1_LoadDutyValue 3444 0 CODE 0 text25 dist/default/production\Christmas_Lights_System.X.production.o
+_Light_vLightType_10 34A6 0 CODE 0 text20 dist/default/production\Christmas_Lights_System.X.production.o
 PWM1_LoadDutyValue@dutyValue 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\Christmas_Lights_System.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Christmas_Lights_System.X.production.o
@@ -485,16 +787,20 @@ _SLRCONB F11 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.product
 _SLRCONC F19 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Christmas_Lights_System.X.production.o
-__end_of__initialization 3B1C 0 CODE 0 cinit dist/default/production\Christmas_Lights_System.X.production.o
+__end_of__initialization 339C 0 CODE 0 cinit dist/default/production\Christmas_Lights_System.X.production.o
+___awmod@divisor 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_Dio_vGetPinLevel 3D6C 0 CODE 0 text11 dist/default/production\Christmas_Lights_System.X.production.o
 Dio_vSetPinDirection@direction 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\Christmas_Lights_System.X.production.o
-__size_of_Dio_vGetPinLevel 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-_PWM1_LoadDutyValue 3BBE 0 CODE 0 text8 dist/default/production\Christmas_Lights_System.X.production.o
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_PWM2_LoadDutyValue 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+_PWM1_LoadDutyValue 3416 0 CODE 0 text25 dist/default/production\Christmas_Lights_System.X.production.o
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_main 3C94 0 CODE 0 text0 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_main 3EB6 0 CODE 0 text0 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_rand 368A 0 CODE 0 text1 dist/default/production\Christmas_Lights_System.X.production.o
 _CCP2CONbits FA7 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+Light_vLightType_10@duty_cycle 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Christmas_Lights_System.X.production.o
 _OSCEN ED7 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _PORTA F8C 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _PORTB F8D 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
@@ -514,21 +820,31 @@ __LRAM 1 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.
 __Lbss 0 0 RAM 1 bss dist/default/production\Christmas_Lights_System.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\Christmas_Lights_System.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\Christmas_Lights_System.X.production.o
-_Dio_vSetPinLevel 3EB6 0 CODE 0 text9 dist/default/production\Christmas_Lights_System.X.production.o
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _CCP1CON FAB 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 _CCP2CON FA7 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_OSCILLATOR_Initialize 3B6A 0 CODE 0 text7 dist/default/production\Christmas_Lights_System.X.production.o
-__initialization 3B1A 0 CODE 0 cinit dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_OSCILLATOR_Initialize 33BE 0 CODE 0 text11 dist/default/production\Christmas_Lights_System.X.production.o
+__initialization 3390 0 CODE 0 cinit dist/default/production\Christmas_Lights_System.X.production.o
 _T2CONbits FBC 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\Christmas_Lights_System.X.production.o
 __Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Christmas_Lights_System.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\Christmas_Lights_System.X.production.o
 _CCP1CONbits FAB 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_0 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_1 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_2 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_3 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_4 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_5 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_6 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_7 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_8 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__size_of_Light_vLightType_9 0 0 ABS 0 - dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_Light_vLightType_10 34F0 0 CODE 0 text20 dist/default/production\Christmas_Lights_System.X.production.o
 __Hintcode 0 0 CODE 0 intcode dist/default/production\Christmas_Lights_System.X.production.o
-_OSCILLATOR_Initialize 3B52 0 CODE 0 text7 dist/default/production\Christmas_Lights_System.X.production.o
-__end_of_TMR2_Initialize 3BBE 0 CODE 0 text2 dist/default/production\Christmas_Lights_System.X.production.o
+_OSCILLATOR_Initialize 33A6 0 CODE 0 text11 dist/default/production\Christmas_Lights_System.X.production.o
+__end_of_TMR2_Initialize 33F8 0 CODE 0 text5 dist/default/production\Christmas_Lights_System.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -553,20 +869,35 @@ __end_of_TMR2_Initialize 3BBE 0 CODE 0 text2 dist/default/production\Christmas_L
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cinit 0 3B1A 3B1A C 1
-text0 0 3C40 3C40 54 1
-text1 0 3B6A 3B6A 1A 1
-text2 0 3BA0 3BA0 1E 1
-text3 0 3B3C 3B3C 16 1
-text4 0 3B26 3B26 16 1
-text5 0 3B84 3B84 1C 1
-text6 0 3BEC 3BEC 54 1
-text7 0 3B52 3B52 18 1
-text8 0 3BBE 3BBE 2E 1
-text9 0 3EB6 3EB6 14A 1
-text10 0 3D6C 3D6C 14A 1
-text11 0 3C94 3C94 D8 1
-cstackCOMRAM 1 1 1 7 1
+cinit 0 3390 3390 16 1
+text0 0 3D9E 3D9E 118 1
+text1 0 361E 361E 6C 1
+text2 0 3548 3548 6A 1
+text3 0 3A16 3A16 B0 1
+text4 0 33F8 33F8 1E 1
+text5 0 33DA 33DA 1E 1
+text6 0 337A 337A 16 1
+text7 0 3364 3364 16 1
+text8 0 334E 334E 16 1
+text9 0 33BE 33BE 1C 1
+text10 0 34F0 34F0 58 1
+text11 0 33A6 33A6 18 1
+text12 0 3968 3968 AE 1
+text13 0 3C94 3C94 10A 1
+text14 0 36F8 36F8 88 1
+text15 0 3AC6 3AC6 E6 1
+text16 0 381C 381C A0 1
+text17 0 3BAC 3BAC E8 1
+text18 0 3780 3780 9C 1
+text19 0 38BC 38BC AC 1
+text20 0 34A6 34A6 4A 1
+text21 0 368A 368A 6E 1
+text22 0 35B2 35B2 6C 1
+text23 0 3472 3472 34 1
+text24 0 3444 3444 2E 1
+text25 0 3416 3416 2E 1
+text26 0 3EB6 3EB6 14A 1
+cstackCOMRAM 1 1 1 20 1
 reset_vec 0 0 0 4 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section

@@ -66,7 +66,7 @@ void PIN_MANAGER_Initialize(void)
     */
     TRISA = 0xFF;
     TRISB = 0xFF;
-    TRISC = 0xF9;
+    TRISC = 0xCB;
 
     /**
     ANSELx registers
@@ -112,8 +112,9 @@ void PIN_MANAGER_Initialize(void)
    
     
 	
-    RC1PPS = 0x06;   //RC1->CCP2:CCP2;    
-    RC2PPS = 0x05;   //RC2->CCP1:CCP1;    
+    RC4PPS = 0x05;   //RC4->CCP1:CCP1;    
+    RC2PPS = 0x06;   //RC2->CCP2:CCP2;    
+    RC5PPS = 0x07;   //RC5->PWM3:PWM3;    
 }
   
 void PIN_MANAGER_IOC(void)

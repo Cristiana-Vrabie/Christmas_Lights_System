@@ -59,16 +59,27 @@ TMR2_CLC7_OUT 22
 TMR2_CLC8_OUT 23
 TMR2_RESERVED_3 24
 ]
-"26 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-[e E9407 . `uc
-STD_LOW 0
-STD_HIGH 1
+"46 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+[e E9422 . `uc
+LIGHT_TYPE0 0
+LIGHT_TYPE1 1
+LIGHT_TYPE2 2
+LIGHT_TYPE3 3
+LIGHT_TYPE4 4
+LIGHT_TYPE5 5
+LIGHT_TYPE6 6
+LIGHT_TYPE7 7
+LIGHT_TYPE8 8
+LIGHT_TYPE9 9
+LIGHT_TYPE10 10
 ]
-"53
-[e E9403 . `uc
+"136
+[e E9406 . `uc
 DIO_OUTPUT_PIN 0
 DIO_INPUT_PIN 1
 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
@@ -81,6 +92,8 @@ DIO_INPUT_PIN 1
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
 "19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\rand.c
+[v _rand rand `(i  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
@@ -95,17 +108,35 @@ DIO_INPUT_PIN 1
 [v ___omul __omul `(uo  1 e 8 0 ]
 "54 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
 [v _Dio_vSetPinDirection Dio_vSetPinDirection `(v  1 e 1 0 ]
-"122
-[v _Dio_vSetPinLevel Dio_vSetPinLevel `(v  1 e 1 0 ]
-"187
-[v _Dio_vGetPinLevel Dio_vGetPinLevel `(E9317  1 e 1 0 ]
-"50 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+"133 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
 [v _main main `(v  1 e 1 0 ]
+"215
+[v _Light_vLightType_0 Light_vLightType_0 `(v  1 e 1 0 ]
+"232
+[v _Light_vLightType_1 Light_vLightType_1 `(v  1 e 1 0 ]
+"248
+[v _Light_vLightType_2 Light_vLightType_2 `(v  1 e 1 0 ]
+"270
+[v _Light_vLightType_3 Light_vLightType_3 `(v  1 e 1 0 ]
+"289
+[v _Light_vLightType_4 Light_vLightType_4 `(v  1 e 1 0 ]
+"316
+[v _Light_vLightType_5 Light_vLightType_5 `(v  1 e 1 0 ]
+"345
+[v _Light_vLightType_6 Light_vLightType_6 `(v  1 e 1 0 ]
+"368
+[v _Light_vLightType_7 Light_vLightType_7 `(v  1 e 1 0 ]
+"387
+[v _Light_vLightType_8 Light_vLightType_8 `(v  1 e 1 0 ]
+"412
+[v _Light_vLightType_9 Light_vLightType_9 `(v  1 e 1 0 ]
+"436
+[v _Light_vLightType_10 Light_vLightType_10 `(v  1 e 1 0 ]
 "50 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"60
+"61
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"74
+"75
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 "55 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
@@ -115,6 +146,12 @@ DIO_INPUT_PIN 1
 [v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
 "64 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
 [v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
+"58 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+"74
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
 "62 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 "100
@@ -127,7 +164,7 @@ DIO_INPUT_PIN 1
 [v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
 "147
 [v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
-[s S124 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S129 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 TMR3IF 1 0 :1:2 
 `uc 1 TMR4IF 1 0 :1:3 
@@ -135,8 +172,8 @@ DIO_INPUT_PIN 1
 `uc 1 TMR6IF 1 0 :1:5 
 ]
 "3906 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f24q10.h
-[u S131 . 1 `S124 1 . 1 0 ]
-[v _PIR4bits PIR4bits `VES131  1 e 1 @3785 ]
+[u S136 . 1 `S129 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES136  1 e 1 @3785 ]
 "4624
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3795 ]
 "4764
@@ -159,10 +196,12 @@ DIO_INPUT_PIN 1
 [v _PMD4 PMD4 `VEuc  1 e 1 @3808 ]
 "5462
 [v _PMD5 PMD5 `VEuc  1 e 1 @3809 ]
-"6230
-[v _RC1PPS RC1PPS `VEuc  1 e 1 @3827 ]
 "6274
 [v _RC2PPS RC2PPS `VEuc  1 e 1 @3828 ]
+"6362
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3830 ]
+"6406
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @3831 ]
 "6724
 [v _INLVLA INLVLA `VEuc  1 e 1 @3848 ]
 "6786
@@ -215,37 +254,43 @@ DIO_INPUT_PIN 1
 [v _PORTB PORTB `VEuc  1 e 1 @3981 ]
 "15439
 [v _PORTC PORTC `VEuc  1 e 1 @3982 ]
+"18655
+[v _PWM3DCL PWM3DCL `VEuc  1 e 1 @4002 ]
+"18721
+[v _PWM3DCH PWM3DCH `VEuc  1 e 1 @4003 ]
+"18891
+[v _PWM3CON PWM3CON `VEuc  1 e 1 @4004 ]
 "18954
 [v _CCPR2L CCPR2L `VEuc  1 e 1 @4005 ]
 "18974
 [v _CCPR2H CCPR2H `VEuc  1 e 1 @4006 ]
 "18994
 [v _CCP2CON CCP2CON `VEuc  1 e 1 @4007 ]
-[s S407 . 1 `uc 1 MODE 1 0 :4:0 
+[s S412 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 FMT 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "19027
-[s S413 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S418 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
-[s S531 . 1 `uc 1 CCP2MODE 1 0 :4:0 
+[s S514 . 1 `uc 1 CCP2MODE 1 0 :4:0 
 `uc 1 CCP2FMT 1 0 :1:4 
 `uc 1 CCP2OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 CCP2EN 1 0 :1:7 
 ]
-[s S537 . 1 `uc 1 CCP2MODE0 1 0 :1:0 
+[s S520 . 1 `uc 1 CCP2MODE0 1 0 :1:0 
 `uc 1 CCP2MODE1 1 0 :1:1 
 `uc 1 CCP2MODE2 1 0 :1:2 
 `uc 1 CCP2MODE3 1 0 :1:3 
 ]
-[u S542 . 1 `S407 1 . 1 0 `S413 1 . 1 0 `S531 1 . 1 0 `S537 1 . 1 0 ]
-[v _CCP2CONbits CCP2CONbits `VES542  1 e 1 @4007 ]
+[u S525 . 1 `S412 1 . 1 0 `S418 1 . 1 0 `S514 1 . 1 0 `S520 1 . 1 0 ]
+[v _CCP2CONbits CCP2CONbits `VES525  1 e 1 @4007 ]
 "19175
 [v _CCPR1L CCPR1L `VEuc  1 e 1 @4009 ]
 "19195
@@ -253,29 +298,29 @@ DIO_INPUT_PIN 1
 "19215
 [v _CCP1CON CCP1CON `VEuc  1 e 1 @4011 ]
 "19252
-[s S418 . 1 `uc 1 CCP1MODE 1 0 :4:0 
+[s S423 . 1 `uc 1 CCP1MODE 1 0 :4:0 
 `uc 1 CCP1FMT 1 0 :1:4 
 `uc 1 CCP1OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 CCP1EN 1 0 :1:7 
 ]
-[s S424 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
+[s S429 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
 `uc 1 CCP1MODE1 1 0 :1:1 
 `uc 1 CCP1MODE2 1 0 :1:2 
 `uc 1 CCP1MODE3 1 0 :1:3 
 ]
-[s S429 . 1 `uc 1 . 1 0 :7:0 
+[s S434 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 P1M1 1 0 :1:7 
 ]
-[u S432 . 1 `S407 1 . 1 0 `S413 1 . 1 0 `S418 1 . 1 0 `S424 1 . 1 0 `S429 1 . 1 0 ]
-[v _CCP1CONbits CCP1CONbits `VES432  1 e 1 @4011 ]
-[s S375 . 1 `uc 1 C1TSEL 1 0 :2:0 
+[u S437 . 1 `S412 1 . 1 0 `S418 1 . 1 0 `S423 1 . 1 0 `S429 1 . 1 0 `S434 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES437  1 e 1 @4011 ]
+[s S380 . 1 `uc 1 C1TSEL 1 0 :2:0 
 `uc 1 C2TSEL 1 0 :2:2 
 `uc 1 P3TSEL 1 0 :2:4 
 `uc 1 P4TSEL 1 0 :2:6 
 ]
 "19421
-[s S380 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+[s S385 . 1 `uc 1 C1TSEL0 1 0 :1:0 
 `uc 1 C1TSEL1 1 0 :1:1 
 `uc 1 C2TSEL0 1 0 :1:2 
 `uc 1 C2TSEL1 1 0 :1:3 
@@ -284,8 +329,8 @@ DIO_INPUT_PIN 1
 `uc 1 P4TSEL0 1 0 :1:6 
 `uc 1 P4TSEL1 1 0 :1:7 
 ]
-[u S389 . 1 `S375 1 . 1 0 `S380 1 . 1 0 ]
-[v _CCPTMRSbits CCPTMRSbits `VES389  1 e 1 @4013 ]
+[u S394 . 1 `S380 1 . 1 0 `S385 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES394  1 e 1 @4013 ]
 "20662
 [v _T2TMR T2TMR `VEuc  1 e 1 @4026 ]
 "20667
@@ -296,16 +341,16 @@ DIO_INPUT_PIN 1
 [v _PR2 PR2 `VEuc  1 e 1 @4027 ]
 "20738
 [v _T2CON T2CON `VEuc  1 e 1 @4028 ]
-[s S268 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S273 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "20774
-[s S272 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+[s S277 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
-[s S276 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S281 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -313,7 +358,7 @@ DIO_INPUT_PIN 1
 `uc 1 T2CKPS1 1 0 :1:5 
 `uc 1 T2CKPS2 1 0 :1:6 
 ]
-[s S284 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S289 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -322,72 +367,105 @@ DIO_INPUT_PIN 1
 `uc 1 CKPS2 1 0 :1:6 
 `uc 1 TMR2ON 1 0 :1:7 
 ]
-[u S293 . 1 `S268 1 . 1 0 `S272 1 . 1 0 `S276 1 . 1 0 `S284 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES293  1 e 1 @4028 ]
+[u S298 . 1 `S273 1 . 1 0 `S277 1 . 1 0 `S281 1 . 1 0 `S289 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES298  1 e 1 @4028 ]
 "20884
 [v _T2HLT T2HLT `VEuc  1 e 1 @4029 ]
-[s S158 . 1 `uc 1 MODE 1 0 :5:0 
+[s S163 . 1 `uc 1 MODE 1 0 :5:0 
 `uc 1 CKSYNC 1 0 :1:5 
 `uc 1 CKPOL 1 0 :1:6 
 `uc 1 PSYNC 1 0 :1:7 
 ]
 "20917
-[s S163 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S168 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 `uc 1 MODE4 1 0 :1:4 
 ]
-[s S169 . 1 `uc 1 T2MODE 1 0 :5:0 
+[s S174 . 1 `uc 1 T2MODE 1 0 :5:0 
 `uc 1 T2CKSYNC 1 0 :1:5 
 `uc 1 T2CKPOL 1 0 :1:6 
 `uc 1 T2PSYNC 1 0 :1:7 
 ]
-[s S174 . 1 `uc 1 T2MODE0 1 0 :1:0 
+[s S179 . 1 `uc 1 T2MODE0 1 0 :1:0 
 `uc 1 T2MODE1 1 0 :1:1 
 `uc 1 T2MODE2 1 0 :1:2 
 `uc 1 T2MODE3 1 0 :1:3 
 `uc 1 T2MODE4 1 0 :1:4 
 ]
-[u S180 . 1 `S158 1 . 1 0 `S163 1 . 1 0 `S169 1 . 1 0 `S174 1 . 1 0 ]
-[v _T2HLTbits T2HLTbits `VES180  1 e 1 @4029 ]
+[u S185 . 1 `S163 1 . 1 0 `S168 1 . 1 0 `S174 1 . 1 0 `S179 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES185  1 e 1 @4029 ]
 "21012
 [v _T2CLKCON T2CLKCON `VEuc  1 e 1 @4030 ]
 "21170
 [v _T2RST T2RST `VEuc  1 e 1 @4031 ]
-[s S234 . 1 `uc 1 RSEL 1 0 :5:0 
+[s S239 . 1 `uc 1 RSEL 1 0 :5:0 
 ]
 "21195
-[s S236 . 1 `uc 1 RSEL0 1 0 :1:0 
+[s S241 . 1 `uc 1 RSEL0 1 0 :1:0 
 `uc 1 RSEL1 1 0 :1:1 
 `uc 1 RSEL2 1 0 :1:2 
 `uc 1 RSEL3 1 0 :1:3 
 ]
-[s S241 . 1 `uc 1 T2RSEL 1 0 :5:0 
+[s S246 . 1 `uc 1 T2RSEL 1 0 :5:0 
 ]
-[s S243 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+[s S248 . 1 `uc 1 T2RSEL0 1 0 :1:0 
 `uc 1 T2RSEL1 1 0 :1:1 
 `uc 1 T2RSEL2 1 0 :1:2 
 `uc 1 T2RSEL3 1 0 :1:3 
 ]
-[u S248 . 1 `S234 1 . 1 0 `S236 1 . 1 0 `S241 1 . 1 0 `S243 1 . 1 0 ]
-[v _T2RSTbits T2RSTbits `VES248  1 e 1 @4031 ]
-"26 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
-[v _read_value_C3 read_value_C3 `E9407  1 e 1 0 ]
-"50
+[u S253 . 1 `S239 1 . 1 0 `S241 1 . 1 0 `S246 1 . 1 0 `S248 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES253  1 e 1 @4031 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\rand.c
+[v _seed seed `ul  1 s 4 seed ]
+"46 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+[v _light_type light_type `E9422  1 s 1 light_type ]
+"133
 [v _main main `(v  1 e 1 0 ]
 {
-"66
+"205
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\rand.c
+[v _rand rand `(i  1 e 2 0 ]
+{
+"15
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 23 ]
+[v ___awmod@counter counter `uc  1 a 1 22 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 18 ]
+[v ___awmod@divisor divisor `i  1 p 2 20 ]
+"34
 } 0
 "50 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"58
+"59
 } 0
 "62 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "86
+} 0
+"58 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+{
+"72
 } 0
 "64 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
 [v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
@@ -399,20 +477,111 @@ DIO_INPUT_PIN 1
 {
 "80
 } 0
-"74 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+"75 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
-"88
+"89
 } 0
 "55 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"117
+"118
 } 0
-"60 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
+"61 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"72
+"73
+} 0
+"412 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\main.c
+[v _Light_vLightType_9 Light_vLightType_9 `(v  1 e 1 0 ]
+{
+"415
+[v Light_vLightType_9@duty_cycle duty_cycle `us  1 a 2 7 ]
+"414
+[v Light_vLightType_9@ucIdx ucIdx `uc  1 a 1 6 ]
+"429
+} 0
+"387
+[v _Light_vLightType_8 Light_vLightType_8 `(v  1 e 1 0 ]
+{
+"389
+[v Light_vLightType_8@ucIdx ucIdx `i  1 a 2 6 ]
+"405
+} 0
+"368
+[v _Light_vLightType_7 Light_vLightType_7 `(v  1 e 1 0 ]
+{
+"370
+[v Light_vLightType_7@duty_cycle duty_cycle `us  1 a 2 6 ]
+"380
+} 0
+"345
+[v _Light_vLightType_6 Light_vLightType_6 `(v  1 e 1 0 ]
+{
+"347
+[v Light_vLightType_6@ucIdx ucIdx `i  1 a 2 4 ]
+"361
+} 0
+"316
+[v _Light_vLightType_5 Light_vLightType_5 `(v  1 e 1 0 ]
+{
+"318
+[v Light_vLightType_5@duty_cycle duty_cycle `us  1 a 2 6 ]
+"319
+[v Light_vLightType_5@toggle toggle `uc  1 s 1 toggle ]
+"338
+} 0
+"289
+[v _Light_vLightType_4 Light_vLightType_4 `(v  1 e 1 0 ]
+{
+"291
+[v Light_vLightType_4@duty_cycle duty_cycle `us  1 a 2 6 ]
+"309
+} 0
+"270
+[v _Light_vLightType_3 Light_vLightType_3 `(v  1 e 1 0 ]
+{
+"272
+[v Light_vLightType_3@duty_cycle duty_cycle `us  1 a 2 6 ]
+"282
+} 0
+"248
+[v _Light_vLightType_2 Light_vLightType_2 `(v  1 e 1 0 ]
+{
+"250
+[v Light_vLightType_2@ucIdx ucIdx `uc  1 a 1 6 ]
+"263
+} 0
+"436
+[v _Light_vLightType_10 Light_vLightType_10 `(v  1 e 1 0 ]
+{
+"438
+[v Light_vLightType_10@duty_cycle duty_cycle `us  1 a 2 3 ]
+"445
+} 0
+"232
+[v _Light_vLightType_1 Light_vLightType_1 `(v  1 e 1 0 ]
+{
+"241
+} 0
+"215
+[v _Light_vLightType_0 Light_vLightType_0 `(v  1 e 1 0 ]
+{
+"217
+[v Light_vLightType_0@duty_cycle duty_cycle `us  1 a 2 6 ]
+"225
+} 0
+"74 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm3.c
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM3_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"81
+} 0
+"82 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm2.c
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM2_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"98
 } 0
 "82 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\mcc_generated_files/pwm1.c
 [v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
@@ -420,22 +589,7 @@ DIO_INPUT_PIN 1
 [v PWM1_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
 "98
 } 0
-"122 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
-[v _Dio_vSetPinLevel Dio_vSetPinLevel `(v  1 e 1 0 ]
-{
-[v Dio_vSetPinLevel@port_pin port_pin `uc  1 a 1 wreg ]
-"125
-[v Dio_vSetPinLevel@pin pin `uc  1 a 1 5 ]
-"124
-[v Dio_vSetPinLevel@port port `uc  1 a 1 3 ]
-"122
-[v Dio_vSetPinLevel@port_pin port_pin `uc  1 a 1 wreg ]
-[v Dio_vSetPinLevel@level level `E9317  1 p 1 0 ]
-"127
-[v Dio_vSetPinLevel@port_pin port_pin `uc  1 a 1 4 ]
-"180
-} 0
-"54
+"54 D:\GIT\Christmas_Lights_System\02_SW\Christmas_Lights_System.X\DIO/dio.c
 [v _Dio_vSetPinDirection Dio_vSetPinDirection `(v  1 e 1 0 ]
 {
 [v Dio_vSetPinDirection@port_pin port_pin `uc  1 a 1 wreg ]
@@ -449,20 +603,4 @@ DIO_INPUT_PIN 1
 "59
 [v Dio_vSetPinDirection@port_pin port_pin `uc  1 a 1 4 ]
 "114
-} 0
-"187
-[v _Dio_vGetPinLevel Dio_vGetPinLevel `(E9317  1 e 1 0 ]
-{
-[v Dio_vGetPinLevel@port_pin port_pin `uc  1 a 1 wreg ]
-"190
-[v Dio_vGetPinLevel@pin pin `uc  1 a 1 5 ]
-"191
-[v Dio_vGetPinLevel@returned_value returned_value `E9317  1 a 1 4 ]
-"189
-[v Dio_vGetPinLevel@port port `uc  1 a 1 2 ]
-"187
-[v Dio_vGetPinLevel@port_pin port_pin `uc  1 a 1 wreg ]
-"191
-[v Dio_vGetPinLevel@port_pin port_pin `uc  1 a 1 3 ]
-"247
 } 0
