@@ -57,6 +57,8 @@ void main(void)
         Dio_vSetPinLevel(0xC4, STD_LOW);
         Dio_vSetPinLevel(0xC4, STD_HIGH);
         read_value_C3 = Dio_vGetPinLevel(0xC3);
+        PWM1_LoadDutyValue(512);
+        PWM2_LoadDutyValue(256);
         
         
     }
